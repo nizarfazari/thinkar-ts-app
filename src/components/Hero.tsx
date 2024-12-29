@@ -2,28 +2,30 @@ import { motion } from "motion/react"
 
 interface HeroProps {
     isVisible: boolean
+    toggleFade : () => void
 
 
 }
 
 export function Hero({
-    isVisible,
+    isVisible,toggleFade
 }: HeroProps) {
     console.log(isVisible)
     return (
-        <section className="container mx-auto  flex flex-col md:flex-row items-center justify-between relative">
+        <section className="container mx-auto  flex flex-col md:flex-row items-center justify-between relative h-[300px]">
+            <div onClick={toggleFade} className="absolute top-0 left-0 w-full h-full z-20 cursor-pointer"></div>
             <motion.div
-                initial={{ opacity: 1, y: 50 }}
+                initial={{ opacity: 1, y: 100 }}
                 animate={{ opacity: isVisible ? 0 : 1, y: isVisible ? 0 : 100 }}
                 transition={{ duration: 0.5 }}
-                className={`absolute top-0 left-0 w-full h-full flex items-center justify-center ${isVisible ? 'hidden' : ''}`}
+                className={`absolute top-0 left-0 w-full h-full flex items-center justify-center `}
             >
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center ">
                     <h1 className="text-[400px] text-[#2697FF] opacity-50 font-bold">
                         VISION
                     </h1>
                     <motion.img
-                        initial={{ opacity: 1, y: 50 }}
+                        initial={{ opacity: 1, y: 100 }}
                         animate={{ opacity: isVisible ? 0 : 1, y: isVisible ? 0 : 100 }}
                         transition={{ duration: 0.5 }}
                         src="/home/arrow-down.png"
@@ -35,8 +37,8 @@ export function Hero({
             </motion.div>
 
             <motion.div className="md:w-1/2 space-y-4"
-                initial={{ opacity: 1, y: 50 }}
-                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 100 }}
                 transition={{ duration: 0.5 }}
 
             >
@@ -55,7 +57,7 @@ export function Hero({
                     className=""
                 >
                     <img
-                        src="/home/glasses.webp"
+                        src="/home/glasses.png"
                         alt="Smart Glasses"
                         className="w-full h-auto"
                     />
