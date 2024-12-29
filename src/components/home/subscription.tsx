@@ -14,24 +14,6 @@ export default function SubscriptionSection() {
 
   return (
     <div className="bg-gradient-to-br from-blue-950 to-blue-900 min-h-screen">
-      {/* Wave animation container */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        {[...Array(3)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute inset-0 transform"
-            style={{
-              animation: `wave ${12 + i * 4}s infinite linear`,
-              backgroundImage: 'linear-gradient(45deg, transparent 45%, rgba(59, 130, 246, 0.1) 50%, transparent 55%)',
-              backgroundSize: '200% 200%',
-              zIndex: i,
-              animationDelay: `${-i * 4}s`,
-              opacity: 0.3
-            }}
-          />
-        ))}
-      </div>
-
       {/* Content Container */}
       <div className="container mx-auto px-4 py-24">
         <div className="max-w-2xl space-y-16">

@@ -78,7 +78,7 @@ export default function Home() {
                     <Features />
                 </motion.div>
                 <div className="bg-gradient-to-b from-black/20 to-black py-8">
-                <div className="container mx-auto ">
+                    <div className="container mx-auto ">
                         <div className="flex flex-wrap justify-center md:justify-between items-center gap-6">
                             <div className="w-full md:w-[550px] flex justify-between items-center border-t py-4 border-gray-500">
                                 <p className="text-lg">Instagram</p>
@@ -89,8 +89,8 @@ export default function Home() {
                                 <WhatsappLogo size={32} />
                             </div>
                         </div>
-                    
-                </div>
+
+                    </div>
                 </div>
             </section>
             <section className="min-h-screen bg-[url('/home/background-4.png')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
@@ -98,18 +98,18 @@ export default function Home() {
                 <Carousel />
             </section>
 
-            <section>
+            <section className="min-h-screen min-h-screen bg-[#020B2D] overflow-hidden">
                 <Description />
             </section>
 
             <section>
                 <SubscriptionSection />
             </section>
-          
-          <Footer />
+
+            <Footer />
 
 
-          <img src="/home/test.png" alt="" />
+
         </main>
     );
 }

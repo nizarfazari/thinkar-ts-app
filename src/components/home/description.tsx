@@ -4,22 +4,22 @@ export default function Description() {
 
   const features = [
     {
-      icon: "Brain",
+      icon: "/home/icons/gpt.png",
       title: "ChatGPT Integration",
       description: "Experience real-time assistance powered by advanced Large Language Models (LLM).",
     },
     {
-      icon: "Mic",
+      icon: "/home/icons/mic.png",
       title: "Daily Assistant",
       description: "Enhance your daily routine with seamless integration of music, translation, maps, teleprompter, calls, and more.",
     },
     {
-      icon: "Feather",
+      icon: "/home/icons/feather.png",
       title: "Lightweight Design",
       description: "Enjoy all-day comfort with a device that weighs only 37g.",
     },
     {
-      icon: "Battery",
+      icon: "/home/icons/battery.png",
       title: "Extended Battery Life",
       description: "Benefit from up to 8 hours of continuous use on a single charge.",
     },
@@ -27,18 +27,18 @@ export default function Description() {
 
 
   return (
-    <div className="min-h-screen bg-[#020B2D] text-white overflow-hidden">
+    <div className=" text-white ">
       {/* Hero Section */}
       <div className="container mx-auto px-4 pt-16">
         <div className="max-w-xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-blue-400 mb-4">
+          <h1 className="text-[60px]  md:text-4xl font-bold text-[#2697FF] mb-6">
             At ThinkAR,
           </h1>
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-lg text-gray-300 max-w-[440px] mb-6">
             Our expertise lies in harnessing AI to drive business transformation and deliver unparalleled value to our clients.
           </p>
           <Button
-            className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6"
+            className="bg-gradient-to-r from-[#214373] from-10% to-[#2869B5] shadow-md text-white rounded-full px-6"
           >
             Learn more
             <span className="ml-2">→</span>
@@ -49,10 +49,10 @@ export default function Description() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-blue-800/30 backdrop-blur-sm p-6 transition-all hover:bg-blue-800/40"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#2869B5] from-50% to-[#214373] p-6 "
             >
-              <div className="space-y-4">
-                <feature.icon className="h-8 w-8 text-white" />
+              <div className="space-y-5">
+                <img src={feature.icon} className="h-14" alt="" />
                 <h3 className="text-xl font-semibold text-white">
                   {feature.title}
                 </h3>
