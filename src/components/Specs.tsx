@@ -16,7 +16,7 @@ interface SpecItemProps {
   
   export function Specs() {
     return (
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto pb-6">
         <div className="bg-white/5 backdrop-blur-md backdrop-brightness-50 rounded-3xl p-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <SpecItem value="640×480" label="Resolution" />

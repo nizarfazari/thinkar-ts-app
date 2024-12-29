@@ -48,20 +48,20 @@ export default function Carousel() {
     }
 
     return (
-        <div className="w-full min-h-screen bg-[#020B2D] p-8">
+        <div className=" p-8">
             <div className="container mx-auto">
                 {/* Header */}
-                <div className='flex justify-between'>
-                    <div className="mb-12">
-                        <h1 className="text-5xl font-bold mb-4">
+                <div className='flex mb-12 justify-between items-center'>
+                    <div className="">
+                        <h1 className="text-[60px] leading-[60px] font-semibold mb-4">
                             <span className="text-[#3B82F6]">AI-Powered</span>{' '}
                             <span className="text-white">Solutions.</span>
                         </h1>
-                        <h2 className="text-5xl font-bold text-white">Global Impact.</h2>
+                        <h2 className="text-[60px] leading-[60px] font-semibold text-white">Global Impact.</h2>
                     </div>
 
                     <div>
-                        <p className='max-w-[340px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
+                        <p className='max-w-[470px] text-white text-[18px] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
                     </div>
                 </div>
 
