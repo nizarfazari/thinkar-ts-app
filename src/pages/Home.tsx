@@ -23,7 +23,7 @@ export default function Home() {
 
     return (
         <main >
-            <section className="min-h-screen bg-[url('/home/background.png')] bg-cover bg-center text-white overflow-hidden ">
+            <section className="min-h-screen bg-[url('/home/background.webp')] bg-cover bg-center text-white overflow-hidden ">
                 <nav className="container mx-auto px-4 py-4 flex items-center justify-between relative z-[2]">
                     <div className="flex items-center gap-20">
                         <div className="text-2xl font-bold">THINKARI</div>
@@ -93,7 +93,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="min-h-screen bg-[url('/home/background-4.png')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
+            <section className="min-h-screen bg-[url('/home/background-4.webp')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
                 <div className="absolute inset-0 bg-black opacity-20 "></div>
                 <Carousel />
             </section>

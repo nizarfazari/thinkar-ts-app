@@ -55,7 +55,7 @@ export function Hero({
                     className=""
                 >
                     <img
-                        src="/home/glasses.png"
+                        src="/home/glasses.webp"
                         alt="Smart Glasses"
                         className="w-full h-auto"
                     />
