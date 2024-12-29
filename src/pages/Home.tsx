@@ -27,7 +27,7 @@ export default function Home() {
                 <section className=" ">
                     <nav className="container mx-auto px-4 py-4 flex items-center justify-between relative z-[2]">
                         <div className="flex items-center gap-20">
-                            <div className="text-2xl font-bold">THINKARI</div>
+                            <img src="/home/logo.png" alt="" />
 
                             <div className="hidden md:flex items-center space-x-8">
                                 <a href="#" className="text-white/80 hover:text-white">
