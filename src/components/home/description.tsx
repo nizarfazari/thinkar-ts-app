@@ -30,7 +30,11 @@ export default function Description() {
     <>
       {/* Hero Section */}
       <div className="container mx-auto pb-20 pt-28 relative">
-        <img src="/home/background/KACAMATA_4.png" className="absolute right-[-100px] top-[20px] w-[1000px]  mix-blend-lighten opacity-70" alt="" />
+        <img
+          src="/home/background/KACAMATA_4.webp"
+          className="animate-slide absolute right-[-100px] top-[20px] w-[1000px] mix-blend-lighten opacity-70"
+          alt=""
+        />
         <div className="max-w-xl">
           <h1 className="text-[60px]  md:text-4xl font-bold text-[#2697FF] mb-6">
             At ThinkAR,
