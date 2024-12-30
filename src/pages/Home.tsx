@@ -170,16 +170,16 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="min-h-screen bg-[url('/home/background-4.webp')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
+            <section className="min-h-screen bg-[url('/home/background/BG_2.png')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
                 <div className="absolute inset-0 bg-black opacity-20 "></div>
                 <Carousel />
             </section>
 
-            <section className="min-h-screen min-h-screen bg-[#020B2D] overflow-hidden">
+            <section className="min-h-screen bg-[url('/home/background/BG_3.png')] bg-cover bg-center overflow-hidden">
                 <Description />
             </section>
 
-            <section>
+            <section className="min-h-screen bg-[url('/home/background/BG_4.png')] bg-cover   overflow-x-clip">
                 <SubscriptionSection />
             </section>
 

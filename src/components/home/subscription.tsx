@@ -14,7 +14,7 @@ export default function SubscriptionSection() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-blue-950 to-blue-900 min-h-screen overflow-x-clip">
+    <div className="">
       {/* Content Container */}
       <div className="container mx-auto px-4 py-24 flex">
         <div className="max-w-2xl space-y-28">
@@ -31,7 +31,7 @@ export default function SubscriptionSection() {
             </h2>
 
             <form onSubmit={handleSubmit} className="w-full">
-              <div className="relative flex items-center">
+              <div className="relative flex items-center z-10">
                 <input
                   type="email"
                   value={email}
@@ -40,7 +40,9 @@ export default function SubscriptionSection() {
                   required
                   className="w-full px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm 
                            border border-white/20 text-white placeholder-blue-100/50
-                           focus:outline-none focus:ring-2 focus:ring-blue-400/50 pr-32"
+                           focus:outline-none focus:ring-2 focus:ring-blue-400/50 pr-32
+                          
+                           "
                 />
                 <button
                   type="submit"

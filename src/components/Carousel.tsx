@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { PlayCircle, PauseCircle, ChevronLeft, ChevronRight } from 'lucide-react'
+import { PlayCircle, PauseCircle, ChevronRight } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
@@ -47,6 +47,7 @@ export default function YouTubeVideoCarousel() {
         pauseAllVideos()
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const prevSlide = () => {
         setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
         pauseAllVideos()
@@ -141,13 +142,13 @@ export default function YouTubeVideoCarousel() {
                     </div>
 
                     {/* Left Arrow */}
-                    <button
+                    {/* <button
                         onClick={prevSlide}
                         className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all"
                         aria-label="Previous slide"
                     >
                         <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-white" />
-                    </button>
+                    </button> */}
 
                     {/* Right Arrow */}
                     <button

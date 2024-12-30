@@ -27,9 +27,10 @@ export default function Description() {
 
 
   return (
-    <div className=" text-white ">
+    <>
       {/* Hero Section */}
-      <div className="container mx-auto px-4 pt-16">
+      <div className="container mx-auto pb-20 pt-28 relative">
+        <img src="/home/background/KACAMATA_4.png" className="absolute right-[-100px] top-[20px] w-[1000px]  mix-blend-lighten opacity-70" alt="" />
         <div className="max-w-xl">
           <h1 className="text-[60px]  md:text-4xl font-bold text-[#2697FF] mb-6">
             At ThinkAR,
@@ -43,19 +44,9 @@ export default function Description() {
             Learn more
             <span className="ml-2">→</span>
           </Button>
-{/* 
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="/home/video/video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div> */}
+
+
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
@@ -77,6 +68,6 @@ export default function Description() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   )
 }
