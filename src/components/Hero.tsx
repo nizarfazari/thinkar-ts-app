@@ -21,9 +21,7 @@ export function Hero({
                 className={`absolute top-0 left-0 w-full h-full flex items-center justify-center `}
             >
                 <div className="relative flex items-center justify-center ">
-                    <h1 className="text-[400px] text-[#2697FF] opacity-50 font-bold">
-                        VISION
-                    </h1>
+                  
                     <motion.img
                         initial={{ opacity: 1, y: 100 }}
                         animate={{ opacity: isVisible ? 0 : 1, y: isVisible ? 0 : 100 }}
