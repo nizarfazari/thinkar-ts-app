@@ -7,7 +7,7 @@ interface SpecItemProps {
 function SpecItem({ value, label }: SpecItemProps) {
   return (
     <div className="text-center space-y-2 grow">
-      <div className="text-4xl md:text-5xl text-blue-400 font-bold">
+      <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#2697FF] to-[#FFFFFF] bg-clip-text text-transparent">
         {value}
       </div>
       <div className="text-sm text-white/80">{label}</div>

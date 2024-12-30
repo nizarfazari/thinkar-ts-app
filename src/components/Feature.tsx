@@ -12,7 +12,7 @@ interface FeatureCardProps {
           className="w-full h-48 object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-center justify-start p-6">
-          <h3 className="text-xl font-semibold text-white ">
+          <h3 className="text-xl font-semibold text-white w-[100px]">
             {title}
           </h3>
         </div>
