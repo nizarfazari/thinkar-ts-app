@@ -80,24 +80,23 @@ export default function VideoCarousel() {
                             <Card
                                 key={slide.id}
                                 onClick={() => goToSlide(index)}
-                                className={`transform transition-all duration-500 !border-none ease-in-out group ${
-                                    index === currentSlide
+                                className={`transform transition-all duration-500 !border-none ease-in-out group ${index === currentSlide
                                         ? 'flex-grow-[2] opacity-100 w-full md:w-[600px]'
                                         : 'flex-grow-0 opacity-60 w-[100px] md:w-[200px] cursor-pointer'
-                                } relative rounded-3xl overflow-hidden`}
+                                    } relative rounded-3xl overflow-hidden`}
                             >
-                                <div className="relative h-[300px] md:h-[400px]">
+                                <div className="relative h-[300px] wrapper-vidio md:h-[400px]">
                                     {/* Thumbnail */}
                                     <img
                                         src={slide.thumbnailUrl}
                                         alt={`${slide.title} thumbnail`}
-                                        className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${
-                                            videoVisible === index ? 'opacity-0' : 'opacity-100'
-                                        }`}
+                                        className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'
+                                            }`}
                                     />
 
                                     {/* Video Player */}
                                     <ReactPlayer
+                                        className="h-full"
                                         ref={el => playerRefs.current[index] = el}
                                         url={slide.videoUrl}
                                         width="100%"
