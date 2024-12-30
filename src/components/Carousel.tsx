@@ -1,78 +1,59 @@
 'use client'
 
-import { useState, useRef } from 'react'
-import { PlayCircle, PauseCircle } from 'lucide-react'
+import { useState, useRef, useCallback } from 'react'
+import { ArrowRight } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import {  ArrowRight } from '@phosphor-icons/react'
+import ReactPlayer from 'react-player'
 
 const slides = [
     {
         id: 1,
         title: 'Gaming',
-        videoId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        videoUrl: '/home/video/smart-watch-interface.mp4',
+        thumbnailUrl: '/home/carousel/SS_1.png',
         description: 'Elevate gaming experiences with AI-powered solutions'
     },
     {
         id: 2,
         title: 'Aviation',
-        videoId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        videoUrl: '/home/video/prudential-app.mp4',
+        thumbnailUrl: '/home/carousel/SS_2.png',
         description: 'Transform aviation with cutting-edge AI technology'
     },
     {
         id: 3,
         title: 'Healthcare',
-        videoId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        videoUrl: '/home/video/ai-for.mp4',
+        thumbnailUrl: '/home/carousel/SS_3.png',
         description: 'Revolutionize healthcare delivery through AI integration'
     },
     {
         id: 4,
         title: 'Office',
-        videoId: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
+        videoUrl: '/home/video/true-hydration.mp4',
+        thumbnailUrl: '/home/carousel/SS_4.png',
         description: 'Optimize office workflows with intelligent solutions'
     }
 ]
 
-export default function YouTubeVideoCarousel() {
+export default function VideoCarousel() {
     const [currentSlide, setCurrentSlide] = useState(0)
-    const [isPlaying, setIsPlaying] = useState(false)
-    const iframeRefs = useRef<(HTMLIFrameElement | null)[]>([])
+    const [playingSlide, setPlayingSlide] = useState<number | null>(null)
+    const [videoVisible, setVideoVisible] = useState<number | null>(null)
+    const playerRefs = useRef<(ReactPlayer | null)[]>([])
 
-    const goToSlide = (index: number) => {
+    const goToSlide = useCallback((index: number) => {
         setCurrentSlide(index)
-        pauseAllVideos()
-    }
+        setVideoVisible(index)
+        setPlayingSlide(index)
+    }, [])
 
-    const nextSlide = () => {
+    const nextSlide = useCallback(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length)
-        pauseAllVideos()
-    }
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    // const prevSlide = () => {
-    //     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-    //     pauseAllVideos()
-    // }
-
-    const togglePlay = (index: number) => {
-        const iframe = iframeRefs.current[index]
-        if (iframe) {
-            if (!isPlaying) {
-                iframe.contentWindow?.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
-                setIsPlaying(true)
-            } else {
-                iframe.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
-                setIsPlaying(false)
-            }
-        }
-    }
-
-    const pauseAllVideos = () => {
-        iframeRefs.current.forEach(iframe => {
-            iframe?.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
-        })
-        setIsPlaying(false)
-    }
+        setPlayingSlide(null)
+        setVideoVisible(null)
+    }, [])
 
     return (
         <div className="">
@@ -98,66 +79,54 @@ export default function YouTubeVideoCarousel() {
                         {slides.map((slide, index) => (
                             <Card
                                 key={slide.id}
-                                className={`transform transition-all duration-500 ease-in-out ${
+                                onClick={() => goToSlide(index)}
+                                className={`transform transition-all duration-500 !border-none ease-in-out group ${
                                     index === currentSlide
                                         ? 'flex-grow-[2] opacity-100 w-full md:w-[600px]'
-                                        : 'flex-grow-0 opacity-60 w-[100px] md:w-[200px]'
+                                        : 'flex-grow-0 opacity-60 w-[100px] md:w-[200px] cursor-pointer'
                                 } relative rounded-3xl overflow-hidden`}
                             >
-                                <div className="relative h-[300px] md:h-[400px] ">
-                                    {/* YouTube Thumbnail */}
+                                <div className="relative h-[300px] md:h-[400px]">
+                                    {/* Thumbnail */}
                                     <img
-                                        src={`https://img.youtube.com/vi/${slide.videoId}/0.jpg`}
+                                        src={slide.thumbnailUrl}
                                         alt={`${slide.title} thumbnail`}
-                                        className="w-full h-full object-cover"
+                                        className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${
+                                            videoVisible === index ? 'opacity-0' : 'opacity-100'
+                                        }`}
                                     />
-                                    <iframe
-                                        ref={el => iframeRefs.current[index] = el}
-                                        src={`https://www.youtube.com/embed/${slide.videoId}?enablejsapi=1&version=3&playerapiid=ytplayer`}
-                                        className="absolute inset-0 w-full h-full z-10"
-                                        style={{ display: isPlaying && index === currentSlide ? 'block' : 'none' }}
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
+
+                                    {/* Video Player */}
+                                    <ReactPlayer
+                                        ref={el => playerRefs.current[index] = el}
+                                        url={slide.videoUrl}
+                                        width="100%"
+                                        height="100%"
+                                        playing={playingSlide === index}
+                                        loop
+                                        controls={index === currentSlide}
+                                        playsinline
+                                        style={{ display: videoVisible === index ? 'block' : 'none' }}
+                                        config={{
+                                            file: {
+                                                attributes: {
+                                                    style: { objectFit: 'cover' }
+                                                }
+                                            }
+                                        }}
                                     />
-                                 
-
-                                    {/* Play/Pause Button Overlay */}
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <button 
-                                            onClick={() => togglePlay(index)}
-                                            className="text-white hover:text-blue-300 transition-colors"
-                                            aria-label={isPlaying && index === currentSlide ? "Pause video" : "Play video"}
-                                        >
-                                            {isPlaying && index === currentSlide ? (
-                                                <PauseCircle className="w-12 h-12 md:w-16 md:h-16" />
-                                            ) : (
-                                                <PlayCircle className="w-12 h-12 md:w-16 md:h-16" />
-                                            )}
-                                        </button>
-                                    </div>
-
-                                  
                                 </div>
                             </Card>
                         ))}
                     </div>
 
-                    {/* Left Arrow */}
-                    {/* <button
-                        onClick={prevSlide}
-                        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all"
-                        aria-label="Previous slide"
-                    >
-                        <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-white" />
-                    </button> */}
-
                     {/* Right Arrow */}
                     <button
                         onClick={nextSlide}
-                        className="absolute right-2 md:right-4 bot-0 translate-y-1/2  rounded-full  p-4 border border-white"
+                        className="absolute right-2 md:right-4 bottom-0 translate-y-1/2 rounded-full p-4 border border-white"
                         aria-label="Next slide"
                     >
-                       <ArrowRight  size={16} weight="light" className="w-4 h-4 md:w-6 md:h-6 text-white"/>
+                        <ArrowRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
                     </button>
 
                     {/* Navigation Buttons */}

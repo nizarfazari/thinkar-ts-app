@@ -9,6 +9,7 @@ import Description from "@/components/home/description";
 import Footer from "@/components/footer";
 import SubscriptionSection from "@/components/home/subscription";
 
+
 export default function Home() {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -184,7 +185,6 @@ export default function Home() {
             </section>
 
             <Footer />
-
 
 
         </main>
