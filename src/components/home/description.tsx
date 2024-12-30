@@ -43,6 +43,19 @@ export default function Description() {
             Learn more
             <span className="ml-2">→</span>
           </Button>
+{/* 
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/home/video/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">

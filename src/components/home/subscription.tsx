@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from "motion/react"
 
 export default function SubscriptionSection() {
   const [email, setEmail] = useState('')
@@ -13,10 +14,10 @@ export default function SubscriptionSection() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-blue-950 to-blue-900 min-h-screen">
+    <div className="bg-gradient-to-br from-blue-950 to-blue-900 min-h-screen overflow-x-clip">
       {/* Content Container */}
-      <div className="container mx-auto px-4 py-24">
-        <div className="max-w-2xl space-y-16">
+      <div className="container mx-auto px-4 py-24 flex">
+        <div className="max-w-2xl space-y-28">
           {/* Description Text */}
           <p className="text-xl md:text-2xl text-blue-100/90 leading-relaxed">
             Elevate connectivity with AR glasses. Perfect for enhancing daily
@@ -25,11 +26,11 @@ export default function SubscriptionSection() {
 
           {/* Subscription Form */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-white">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white text-center">
               Get in touch
             </h2>
 
-            <form onSubmit={handleSubmit} className="max-w-xl">
+            <form onSubmit={handleSubmit} className="w-full">
               <div className="relative flex items-center">
                 <input
                   type="email"
@@ -43,15 +44,20 @@ export default function SubscriptionSection() {
                 />
                 <button
                   type="submit"
-                  className="absolute right-2 px-6 py-2 rounded-full bg-blue-600 hover:bg-blue-500 
-                         transition-colors duration-200 text-white font-medium
-                         focus:outline-none focus:ring-2 focus:ring-blue-400/50"
+                  className="absolute right-2 px-6 py-2 rounded-full bg-gradient-to-r from-[#214373] from-10% to-[#2869B5] shadow-md text-white rounded-full"
                 >
                   Subscribe
                 </button>
               </div>
             </form>
           </div>
+        </div>
+        <div className='w-64 relative'>
+            <motion.div className='absolute'
+               initial={{ opacity: 1, x: 400 }}
+            >
+                <img src="/home/sunglasses-desc.png" className='scale-[9]' alt="" />
+            </motion.div>
         </div>
       </div>
     </div>
