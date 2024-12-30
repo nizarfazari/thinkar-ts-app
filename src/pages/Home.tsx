@@ -102,7 +102,7 @@ export default function Home() {
             <section className="min-h-screen bg-[url('/home/background/BG_1.webp')] bg-cover bg-center text-white overflow-hidden ">
                 <nav className="container mx-auto px-4 py-4 flex items-center justify-between relative z-[2]">
                     <div className="flex items-center gap-20">
-                        <img src="/home/logo.png" alt="" />
+                    <img src="/home/logo.png" alt="" className="w-24 " />
 
                         <div className="hidden md:flex items-center space-x-8">
                             <a href="#" className="text-white/80 hover:text-white">
