@@ -43,7 +43,7 @@ export function Hero({
 
             >
                 <h1 className="text-5xl md:text-6xl font-semibold leading-[80px] font-redhat pl-20">
-                    Enhancing <span className="text-blue-400">Vision</span>
+                    Enhancing 
                     <br />
                     Empowering You
                 </h1>
