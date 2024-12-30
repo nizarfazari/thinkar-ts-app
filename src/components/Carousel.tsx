@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { PlayCircle, PauseCircle, ChevronRight } from 'lucide-react'
+import { PlayCircle, PauseCircle } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import {  ArrowRight } from '@phosphor-icons/react'
 
 const slides = [
     {
@@ -153,10 +154,10 @@ export default function YouTubeVideoCarousel() {
                     {/* Right Arrow */}
                     <button
                         onClick={nextSlide}
-                        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all"
+                        className="absolute right-2 md:right-4 bot-0 translate-y-1/2  rounded-full  p-4 border border-white"
                         aria-label="Next slide"
                     >
-                        <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                       <ArrowRight  size={16} weight="light" className="w-4 h-4 md:w-6 md:h-6 text-white"/>
                     </button>
 
                     {/* Navigation Buttons */}
