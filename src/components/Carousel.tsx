@@ -48,10 +48,10 @@ export default function YouTubeVideoCarousel() {
     }
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-        pauseAllVideos()
-    }
+    // const prevSlide = () => {
+    //     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+    //     pauseAllVideos()
+    // }
 
     const togglePlay = (index: number) => {
         const iframe = iframeRefs.current[index]
