@@ -31,7 +31,7 @@ export default function Description() {
       {/* Hero Section */}
       <div className="container mx-auto pb-20 pt-28 relative">
         <img
-          src="/home/background/KACAMATA_4.webp"
+          src="/home/glasses/KACAMATA_4-transformed.webp"
           className="animate-slide absolute right-[-100px] top-[20px] w-[1000px] mix-blend-lighten opacity-70"
           alt=""
         />
@@ -57,7 +57,7 @@ export default function Description() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#2869B5] from-50% to-[#214373] p-6 "
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#142C61]/80 to-[#0A1A3C]/80 p-6 shadow-[20px_20px_10px_#00000029] backdrop-blur-sm "
             >
               <div className="space-y-5">
                 <img src={feature.icon} className="h-14" alt="" />

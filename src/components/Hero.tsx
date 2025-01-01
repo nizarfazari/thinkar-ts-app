@@ -32,7 +32,7 @@ export function Hero({
                     className=""
                 >
                     <img
-                        src="/home/glasses.webp"
+                        src="/home/glasses/AiLens_Full-transformed.webp"
                         alt="Smart Glasses"
                         className="w-full h-auto"
                     />

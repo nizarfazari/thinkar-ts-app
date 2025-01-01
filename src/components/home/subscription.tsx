@@ -58,7 +58,7 @@ export default function SubscriptionSection() {
             <motion.div className='absolute'
                initial={{ opacity: 1, x: 400, y : 40 }}
             >
-                <img src="/home/sunglasses-desc.png" className='scale-[9]' alt="" />
+                <img src="/home/glasses/AiLens_2-transformed.webp" className='scale-[9]' alt="" />
             </motion.div>
         </div>
       </div>
