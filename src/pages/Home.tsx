@@ -46,7 +46,7 @@ export default function Home() {
                     </div>
 
                     <div className="form-box relative w-[240px] bg-gray-700 px-5 py-2 rounded-full">
-                        <div className="button-box relative bg-gray-700 rounded-full flex items-center p-1">
+                        <div className="button-box relative bg-gray-700 rounded-full flex items-center p-1 text-white">
                             <div
                                 id="btn"
                                 className={`absolute bg-gradient-to-r from-[#1B64A7] from-70% to-[#2697FF] shadow-md top-0 bottom-0 w-1/2 rounded-full transition-all duration-300 ${toggle === "left" ? "left-0 " : "left-1/2 "}`}
