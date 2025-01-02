@@ -8,7 +8,7 @@ export function Hero({
     toggleFade
 }: HeroProps) {
     return (
-        <section className="container mx-auto  flex flex-col md:flex-row items-center justify-between relative h-[300px]">
+        <section className="container mx-auto  flex flex-col md:flex-row items-center justify-between relative h-[200px]">
             <div onClick={toggleFade} className="absolute top-0 left-0 w-full h-full z-20 "></div>
           
 
@@ -26,8 +26,8 @@ export function Hero({
 
             <div className="md:w-1/2 mt-8 md:mt-0 relative">
                 <motion.div
-                    initial={{ y: 100, scale: 2 }}
-                    animate={{ x: 100 , rotate:10, }}
+                    initial={{ y: 100, scale: 2.2 }}
+                    animate={{ x: 100 , rotate: 5, }}
                     transition={{ duration: 0.5 }}
                     className=""
                 >

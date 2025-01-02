@@ -7,10 +7,10 @@ interface SpecItemProps {
 function SpecItem({ value, label }: SpecItemProps) {
   return (
     <div className="text-center space-y-2 grow">
-      <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#2697FF] to-[#FFFFFF] bg-clip-text text-transparent">
+      <div className="text-4xl md:text-5xl font-inter font-semibold  bg-gradient-to-r from-[#2697FF] to-[#FFFFFF]  bg-clip-text text-transparent py-1">
         {value}
       </div>
-      <div className="text-sm text-white/80">{label}</div>
+      <div className="text-[18px] font-inter text-[#F7F7F7]">{label}</div>
     </div>
   );
 }
@@ -25,7 +25,7 @@ export function Specs() {
 
   return (
     <section className="container mx-auto pb-6">
-      <div className="bg-specs rounded-3xl p-8">
+      <div className="bg-specs rounded-3xl  py-10">
         <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
           {specs.map((spec, index) => (
             <div key={index} className="flex items-center gap-6 grow">

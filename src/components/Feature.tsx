@@ -5,13 +5,13 @@ interface FeatureCardProps {
   
   function FeatureCard({ title, image }: FeatureCardProps) {
     return (
-      <div className="relative overflow-hidden rounded-2xl group">
+      <div className="relative overflow-hidden rounded-2xl">
         <img
           src={image}
           alt={title}
-          className="w-full h-48 object-cover"
+          className=" object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-center justify-start p-6">
+        <div className="absolute inset-0 flex items-center justify-start p-6">
           <h3 className="text-xl font-semibold text-white w-[100px]">
             {title}
           </h3>
