@@ -16,7 +16,7 @@ export default function Home() {
     const toggleFade = () => {
         setIsVisible(!isVisible);
     };
-    const [toggle, setToggle] = useState<"left" | "right">("left");
+    const [toggle, setToggle] = useState<"left" | "right">("right");
 
     const handleToggle = (position: "left" | "right") => {
         setToggle(position);
@@ -32,14 +32,14 @@ export default function Home() {
                         <img src="/home/logo.png" alt="" className="w-24 " />
 
                         <div className="hidden md:flex items-center space-x-20">
-                            <a href="#" className="text-white/80 hover:text-white">
+                            <a href="#" className="text-white">
                                 Products
                             </a>
 
-                            <a href="#" className="text-white/80 hover:text-white">
+                            <a href="#" className="text-white">
                                 Store
                             </a>
-                            <a href="#" className="text-white/80 hover:text-white">
+                            <a href="#" className="text-white">
                                 Support
                             </a>
                         </div>
@@ -70,30 +70,32 @@ export default function Home() {
                 </div>
             </nav>
 
-            <section className="min-h-screen bg-[url('/home/background/BG_1.webp')] bg-cover bg-center text-white overflow-hidden pt-20">
-                <Hero toggleFade={toggleFade} />
-                <motion.div
+            <section className="min-h-screen bg-[url('/home/background/BG_1.webp')] bg-cover bg-center text-white overflow-hidden flex flex-col">
+                <div className="flex-1 pt-52">
+                    <Hero toggleFade={toggleFade} />
+                    <motion.div>
+                        <Specs />
+                        <Features />
+                    </motion.div>
+                </div>
 
-                >
-                    <Specs />
-                    <Features />
-                </motion.div>
-                <div className="shadow-nav-footer py-4">
-                    <div className="container mx-auto ">
+                <div className="shadow-nav-footer pt-4 mt-auto">
+                    <div className="container mx-auto">
                         <div className="flex flex-wrap justify-center md:justify-between items-center gap-6">
                             <div className="w-full md:w-[550px] flex justify-between items-center border-t py-4 border-gray-500">
-                                <p className="text-lg">Instagram</p>
-                                <InstagramLogo size={32} />
+                                <p className="text-sm">Instagram</p>
+                                <InstagramLogo size={20} />
                             </div>
                             <div className="w-full md:w-[550px] flex justify-between items-center border-t py-4 border-gray-500">
-                                <p className="text-lg">WhatsApp</p>
-                                <WhatsappLogo size={32} />
+                                <p className="text-s,">WhatsApp</p>
+                                <WhatsappLogo size={20} />
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+
+
             <section className="min-h-screen bg-[url('/home/background/BG_2.webp')]  py-14 bg-cover bg-center overflow-hidden relative">
                 <Carousel />
             </section>
