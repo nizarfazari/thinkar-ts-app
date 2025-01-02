@@ -95,7 +95,6 @@ export default function Home() {
                 </div>
             </section>
             <section className="min-h-screen bg-[url('/home/background/BG_2.webp')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
-                <div className="absolute inset-0 bg-black opacity-20 "></div>
                 <Carousel />
             </section>
 

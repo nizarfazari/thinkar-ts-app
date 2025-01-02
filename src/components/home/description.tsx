@@ -32,14 +32,14 @@ export default function Description() {
       <div className="container mx-auto pb-20 pt-28 relative">
         <img
           src="/home/glasses/KACAMATA_4-transformed.webp"
-          className="animate-slide absolute right-[-100px] top-[20px] w-[1000px] mix-blend-lighten opacity-70"
+          className="animate-slide absolute right-[0px] top-[20px] w-[1000px] mix-blend-screen  scale-[1.2]"
           alt=""
         />
         <div className="max-w-xl">
-          <h1 className="text-[60px]  md:text-4xl font-bold text-[#2697FF] mb-6">
+          <h1 className="text-[70px] leading-[80px]  md:text-4xl font-semibold text-[#2697FF] mix-blend-normal mb-12 font-redhat">
             At ThinkAR,
           </h1>
-          <p className="text-lg text-gray-300 max-w-[440px] mb-6">
+          <p className="text-[20px] leading-[29px] font-inter text-gray-300 max-w-[500px] mb-8">
             Our expertise lies in harnessing AI to drive business transformation and deliver unparalleled value to our clients.
           </p>
           <Button
@@ -57,7 +57,7 @@ export default function Description() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#142C61]/80 to-[#0A1A3C]/80 p-6 shadow-[20px_20px_10px_#00000029] backdrop-blur-sm "
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#00155B]/50 to-[#030930]/90 p-6 shadow-[20px_20px_10px_#00000029] backdrop-blur-sm "
             >
               <div className="space-y-5">
                 <img src={feature.icon} className="h-14" alt="" />
