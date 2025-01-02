@@ -17,7 +17,7 @@ export default function SubscriptionSection() {
     <div className="">
       {/* Content Container */}
       <div className="container mx-auto px-4 py-24 flex">
-        <div className="max-w-[580px] space-y-28">
+        <div className="max-w-[580px] space-y-44">
           {/* Description Text */}
           <p className="text-lg md:text-xl text-blue-100/90 leading-relaxed">
             Elevate connectivity with AR glasses. Perfect for enhancing daily
@@ -25,7 +25,7 @@ export default function SubscriptionSection() {
           </p>
 
           {/* Subscription Form */}
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             <h2 className="text-3xl md:text-4xl font-semibold text-white text-center">
               Get in touch
             </h2>
