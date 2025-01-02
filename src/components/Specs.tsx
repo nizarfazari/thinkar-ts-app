@@ -25,7 +25,7 @@ export function Specs() {
 
   return (
     <section className="container mx-auto pb-6">
-      <div className="bg-white/5 backdrop-blur-md backdrop-brightness-50 rounded-3xl p-8">
+      <div className="bg-specs rounded-3xl p-8">
         <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
           {specs.map((spec, index) => (
             <div key={index} className="flex items-center gap-6 grow">

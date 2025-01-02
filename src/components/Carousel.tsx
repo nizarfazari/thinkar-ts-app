@@ -120,7 +120,7 @@ export default function VideoCarousel() {
                     </div>
 
                     <div>
-                        <p className='max-w-[470px] text-white text-base md:text-[18px] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
+                        <p className='max-w-[500px] text-white text-base md:text-[22px] font-[300] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
                     </div>
                 </div>
 

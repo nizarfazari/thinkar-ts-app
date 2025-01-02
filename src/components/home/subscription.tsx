@@ -17,9 +17,9 @@ export default function SubscriptionSection() {
     <div className="">
       {/* Content Container */}
       <div className="container mx-auto px-4 py-24 flex">
-        <div className="max-w-2xl space-y-28">
+        <div className="max-w-[580px] space-y-28">
           {/* Description Text */}
-          <p className="text-xl md:text-2xl text-blue-100/90 leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-100/90 leading-relaxed">
             Elevate connectivity with AR glasses. Perfect for enhancing daily
             interactions with hands-free technology.
           </p>
@@ -38,15 +38,15 @@ export default function SubscriptionSection() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter Your Email"
                   required
-                  className="w-full px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm 
-                           border border-white/20 text-white placeholder-blue-100/50
+                  className="w-full px-10 py-4 rounded-full bg-[#324F79] backdrop-blur-sm 
+                            text-white placeholder-white
                            focus:outline-none focus:ring-2 focus:ring-blue-400/50 pr-32
                           
                            "
                 />
                 <button
                   type="submit"
-                  className="absolute right-2 px-6 py-2 rounded-full bg-gradient-to-r from-[#214373] from-10% to-[#2869B5] shadow-md text-white rounded-full"
+                  className="absolute right-2 px-6 py-2 rounded-full bg-gradient-to-r from-[#214373] from-45% to-[#2869B5] shadow-md text-white rounded-full"
                 >
                   Subscribe
                 </button>

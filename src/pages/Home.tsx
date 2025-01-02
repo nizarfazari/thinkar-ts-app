@@ -26,12 +26,12 @@ export default function Home() {
 
     return (
         <main>
-            <nav className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md   py-4 z-[50]">
+            <nav className="fixed top-0 left-0 w-full  shadow-header z-[50]">
                 <div className="container mx-auto flex items-center justify-between ">
-                    <div className="flex items-center gap-20">
+                    <div className="flex items-center gap-36">
                         <img src="/home/logo.png" alt="" className="w-24 " />
 
-                        <div className="hidden md:flex items-center space-x-8">
+                        <div className="hidden md:flex items-center space-x-20">
                             <a href="#" className="text-white/80 hover:text-white">
                                 Products
                             </a>
@@ -78,7 +78,7 @@ export default function Home() {
                     <Specs />
                     <Features />
                 </motion.div>
-                <div className="bg-gradient-to-b from-black/20 to-black py-8">
+                <div className="shadow-nav-footer py-4">
                     <div className="container mx-auto ">
                         <div className="flex flex-wrap justify-center md:justify-between items-center gap-6">
                             <div className="w-full md:w-[550px] flex justify-between items-center border-t py-4 border-gray-500">
@@ -94,7 +94,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="min-h-screen bg-[url('/home/background/BG_2.webp')]  py-14 bg-cover bg-center overflow-hidden relative border-t-[0.2px] border-slate-200">
+            <section className="min-h-screen bg-[url('/home/background/BG_2.webp')]  py-14 bg-cover bg-center overflow-hidden relative">
                 <Carousel />
             </section>
 
