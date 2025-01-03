@@ -11,11 +11,11 @@ import SubscriptionSection from "@/components/home/subscription";
 
 
 export default function Home() {
-    const [isVisible, setIsVisible] = useState(false);
+    // const [isVisible, setIsVisible] = useState(false);
 
-    const toggleFade = () => {
-        setIsVisible(!isVisible);
-    };
+    // const toggleFade = () => {
+    //     setIsVisible(!isVisible);
+    // };
     const [toggle, setToggle] = useState<"left" | "right">("right");
 
     const handleToggle = (position: "left" | "right") => {
@@ -72,7 +72,7 @@ export default function Home() {
 
             <section className="min-h-screen bg-[url('/home/background/BG_1.webp')] bg-cover bg-center text-white overflow-hidden flex flex-col">
                 <div className="flex-1 pt-52">
-                    <Hero toggleFade={toggleFade} />
+                    <Hero />
                     <motion.div>
                         <Specs />
                         <Features />

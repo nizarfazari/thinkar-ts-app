@@ -1,12 +1,8 @@
 import { motion } from "motion/react";
 
-interface HeroProps {
-    toggleFade?: () => void;
-}
 
-export function Hero({
-    toggleFade
-}: HeroProps) {
+
+export function Hero() {
     return (
         <section className="container mx-auto flex flex-col md:flex-row items-center justify-between relative h-auto md:h-[200px] px-6 md:px-20 py-12 md:py-0">
             
