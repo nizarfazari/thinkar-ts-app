@@ -25,8 +25,8 @@ export function Specs() {
 
   return (
     <section className="container mx-auto pb-6">
-      <div className="bg-specs rounded-3xl  py-10">
-        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+      <div className="bg-specs rounded-3xl  py-10 px-8 sm:px-0">
+        <div className="grid grid-cols-2  md:flex flex-wrap items-center justify-center gap-6 md:gap-8">
           {specs.map((spec, index) => (
             <div key={index} className="flex items-center gap-6 grow">
               <SpecItem value={spec.value} label={spec.label} />
@@ -34,7 +34,7 @@ export function Specs() {
                 <img
                   src="/home/icons/arrow-up.svg"
                   alt="Arrow Up"
-                  className="w-6 h-6 md:w-16 md:h-16"
+                  className={`w-6 h-6 md:w-16 md:h-16 hidden sm:block`}
                 />
               )}
             </div>
