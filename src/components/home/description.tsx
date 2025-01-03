@@ -4,22 +4,22 @@ export default function Description() {
 
   const features = [
     {
-      icon: "/home/icons/gpt.png",
+      icon: "/home/icons/Asset 1.svg",
       title: "ChatGPT Integration",
       description: "Experience real-time assistance powered by advanced Large Language Models (LLM).",
     },
     {
-      icon: "/home/icons/mic.png",
+      icon: "/home/icons/Asset 2.svg",
       title: "Daily Assistant",
       description: "Enhance your daily routine with seamless integration of music, translation, maps, teleprompter, calls, and more.",
     },
     {
-      icon: "/home/icons/feather.png",
+      icon: "/home/icons/Asset 3.svg",
       title: "Lightweight Design",
       description: "Enjoy all-day comfort with a device that weighs only 37g.",
     },
     {
-      icon: "/home/icons/battery.png",
+      icon: "/home/icons/Asset 4.svg",
       title: "Extended Battery Life",
       description: "Benefit from up to 8 hours of continuous use on a single charge.",
     },

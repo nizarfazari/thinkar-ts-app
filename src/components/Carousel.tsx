@@ -121,7 +121,7 @@ export default function VideoCarousel() {
                                         className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'
                                             }`}
                                     />
-                                    <div className={`absolute inset-0 bg-blue-700/80 mix-blend-multiply ${videoVisible === index ? 'opacity-0' : 'opacity-100'}`} />
+                                    <div className={`absolute inset-0 bg-blue-700/80 mix-blend-multiply ${videoVisible === index ? 'opacity-0 z-[-2px]' : 'opacity-100'}`} />
 
                                     {/* Video Player */}
                                     <ReactPlayer
