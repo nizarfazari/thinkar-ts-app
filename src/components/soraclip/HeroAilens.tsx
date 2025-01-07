@@ -9,9 +9,10 @@ export function HeroAilens() {
                     SoraClip
                 </h1>
                 <h2 className="text-[#5F5F5F] text-3xl font-inter font-medium">
-                    Expand Your Vision, Redefine Your World.
+                    Ultra Lightweight Open Wearable Stereo
                 </h2>
             </div>
+
 
 
 

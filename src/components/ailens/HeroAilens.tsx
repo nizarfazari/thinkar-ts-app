@@ -17,10 +17,10 @@ export function HeroAilens() {
             <div className="w-full md:w-1/2 mt-8 md:mt-0 relative flex justify-center md:justify-end order-first md:order-none">
                 <div
 
-                    className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl translate-x-[0px] scale-[2] md:scale-[2.4] md:translate-x-[100px] md:-translate-y-[-90px] -translate-y-[50px] rotate-6 "
+                    className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl translate-x-[0px] scale-[1.5] md:translate-x-[150px] md:-translate-y-[-90px] -translate-y-[50px]"
                 >
                     <img
-                        src="/home/glasses/AiLens_Full-transformed.webp"
+                        src="/home/hero.png"
                         alt="Smart Glasses"
                         className="w-full h-auto"
                     />

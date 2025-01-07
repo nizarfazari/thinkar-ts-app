@@ -31,8 +31,8 @@ export default function Description() {
       {/* Hero Section */}
       <div className="container mx-auto pb-20 pt-28 relative">
         <img
-          src="/home/glasses/KACAMATA_4-transformed.webp"
-          className="animate-slide absolute right-[0px] top-[20px] w-[1000px]   scale-[1.2] hidden sm:block"
+          src="/home/glasses/KACAMATA_4-transformed.png"
+          className="animate-slide absolute right-[220px] top-[90px] w-[580px]   scale-[1.2] hidden sm:block"
           alt=""
         />
         <div className="max-w-xl">
