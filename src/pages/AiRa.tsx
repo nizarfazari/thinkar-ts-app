@@ -25,7 +25,7 @@ export default function Aira() {
             <img
               src="/aira/details/details-1.png"
               alt="Smart Glasses"
-              className="w-full "
+              className="w-full max-w-xl"
             />
           </div>
           <div className="flex flex-col justify-center text-center md:text-left">

@@ -15,7 +15,7 @@ export default function SubscriptionSection() {
   return (
     <div className="relative">
       {/* Content Container */}
-      <div className="container mx-auto py-24 flex ">
+      <div className="container mx-auto py-20 flex ">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="max-w-[580px] space-y-12 md:space-y-24 lg:space-y-44 mb-12 lg:mb-0">
             {/* Description Text */}
@@ -52,7 +52,7 @@ export default function SubscriptionSection() {
               </form>
             </div>
           </div>
-          <div className='lg:absolute transform lg:translate-x-[300px] lg:-translate-y-[350px]  top-0 right-0 static lg:order-none order-first'
+          <div className='lg:absolute top-0 right-0 static lg:order-none order-first'
           >
             <img src="/ailens/subscrition.png" className='2xl:w-[1200px] xl:w-[800px] lg:w-[500px]' alt="" />
           </div>

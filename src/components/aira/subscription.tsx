@@ -52,7 +52,7 @@ export default function SubscriptionAilens() {
               </form>
             </div>
           </div>
-          <div className='lg:absolute transform lg:translate-x-[300px] lg:-translate-y-[350px]  top-0 right-0 static lg:order-none order-first'
+          <div className='lg:absolute   top-0 right-[-240px] static lg:order-none order-first'
           >
             <img src="/aira/details/subscription.png" className='2xl:w-[1200px] xl:w-[800px] lg:w-[500px]' alt="" />
           </div>
