@@ -32,18 +32,18 @@ export default function Description() {
       <div className="container mx-auto pb-20 pt-28 relative">
         <img
           src="/home/glasses/KACAMATA_4-transformed.webp"
-          className="animate-slide absolute right-[0px] top-[20px] w-[1000px] mix-blend-screen  scale-[1.2]"
+          className="animate-slide absolute right-[0px] top-[20px] w-[1000px]   scale-[1.2] hidden sm:block"
           alt=""
         />
         <div className="max-w-xl">
           <h1 className="text-[70px] leading-[80px]  md:text-4xl font-semibold text-[#2697FF] mix-blend-normal mb-12 font-redhat">
             At ThinkAR,
           </h1>
-          <p className="text-[20px] leading-[29px] font-inter text-gray-300 max-w-[500px] mb-8">
+          <p className="text-[20px] leading-[29px] font-inter text-[#5F5F5F] max-w-[500px] mb-8">
             Our expertise lies in harnessing AI to drive business transformation and deliver unparalleled value to our clients.
           </p>
           <Button
-            className="bg-gradient-to-r from-[#214373] from-10% to-[#2869B5] shadow-md text-white rounded-full px-6"
+          className="bg-gradient-to-r from-[#1F78CD] from-20% to-[#4B86B0] shadow-md text-white rounded-full px-6"
           >
             Learn more
             <span className="ml-2">→</span>
@@ -57,7 +57,7 @@ export default function Description() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#00155B]/50 to-[#030930]/90 p-6 shadow-[20px_20px_10px_#00000029] backdrop-blur-sm "
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#444A4D]/80 to-[#444A4D]/90 p-6  backdrop-blur-md "
             >
               <div className="space-y-5">
                 <img src={feature.icon} className="h-14" alt="" />

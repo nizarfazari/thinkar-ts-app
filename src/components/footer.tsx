@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-black to-black pb-8 shadow-footer">
-            <div className="container mx-auto border-t border-gray-400 py-8">
+        <footer className="bg-gradient-to-b from-[#71AED0] to-[#71AED0] pb-8 shadow-footer">
+            <div className="container mx-auto border-t-[2px] border-white py-8">
                 <ul className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
                     <li>
                         <a

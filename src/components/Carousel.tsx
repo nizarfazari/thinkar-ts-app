@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import { ArrowRight } from 'lucide-react'
 
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import ReactPlayer from 'react-player'
 import { Play } from '@phosphor-icons/react'
+import CarouselSlick from './carousel-slick'
 
 const slides = [
     {
@@ -58,9 +59,19 @@ export default function VideoCarousel() {
     const [playingSlide, setPlayingSlide] = useState<number | null>(null)
     const [videoVisible, setVideoVisible] = useState<number | null>(null)
     const playerRefs = useRef<(ReactPlayer | null)[]>([])
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 786)
     // Removed: const [thumbnails, setThumbnails] = useState<string[]>([])
 
     // Removed: useEffect hook for generating thumbnails
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsLargeScreen(window.innerWidth > 786)
+        }
+
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     const goToSlide = useCallback((index: number) => {
         setCurrentSlide(index)
@@ -83,6 +94,14 @@ export default function VideoCarousel() {
     //     }
     // }, [playingSlide])
 
+    if(!isLargeScreen) {
+
+        return (
+            <CarouselSlick />
+        )
+    }
+
+
     return (
         <div className="">
             <div className="container mx-auto py-12">
@@ -91,13 +110,13 @@ export default function VideoCarousel() {
                     <div className="mb-6 md:mb-0">
                         <h1 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold mb-4">
                             <span className="text-[#3B82F6]">AI-Powered</span>{' '}
-                            <span className="text-white">Solutions.</span>
+                            <span className="text-[#5F5F5F]">Solutions.</span>
                         </h1>
-                        <h2 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold text-white">Global Impact.</h2>
+                        <h2 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold text-[#5F5F5F]">Global Impact.</h2>
                     </div>
 
                     <div>
-                        <p className='max-w-[450px] text-white text-base md:text-lg font-[300] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
+                        <p className='max-w-[450px] text-[#5F5F5F] text-base md:text-lg font-[300] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
                     </div>
                 </div>
 
@@ -121,7 +140,7 @@ export default function VideoCarousel() {
                                         className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'
                                             }`}
                                     />
-                                    <div className={`absolute inset-0 bg-blue-700/80 mix-blend-multiply ${videoVisible === index ? 'opacity-0 z-[-2px]' : 'opacity-100'}`} />
+                                  
 
                                     {/* Video Player */}
                                     <ReactPlayer
@@ -164,10 +183,10 @@ export default function VideoCarousel() {
                     {/* Right Arrow */}
                     <button
                         onClick={nextSlide}
-                        className="absolute right-2 md:right-4 bottom-0 translate-y-1/2 rounded-full p-4 border border-white"
+                        className="absolute right-2 md:right-4 bottom-0 translate-y-1/2 rounded-full p-4 border border-[#5F5F5F]"
                         aria-label="Next slide"
                     >
-                        <ArrowRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                        <ArrowRight className="w-4 h-4 md:w-6 md:h-6 text-[#5F5F5F]" />
                     </button>
 
                     {/* Navigation Buttons */}
@@ -180,8 +199,8 @@ export default function VideoCarousel() {
                                 className={`
                                     px-3 py-1 md:px-6 md:py-2 text-sm md:text-base rounded-full transition-all shadow-lg
                                     ${currentSlide === index
-                                        ? 'bg-black text-white hover:bg-black/90'
-                                        : 'bg-[#062043] text-white hover:text-white hover:bg-[#062043]/80'
+                                        ? 'bg-[#2697FF] text-white hover:bg-[#2697FF]/90'
+                                        : 'bg-[#71AED0] text-white hover:text-white hover:bg-[#71AED0]/80'
                                     }
                                 `}
                             >
