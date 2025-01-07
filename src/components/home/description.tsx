@@ -32,7 +32,7 @@ export default function Description() {
       <div className="container mx-auto pb-20 pt-28 relative">
         <img
           src="/home/glasses/KACAMATA_4-transformed.png"
-          className="animate-slide absolute right-[220px] top-[90px] w-[580px]   scale-[1.2] hidden sm:block"
+          className="animate-slide absolute right-[130px] top-[90px] w-[580px] scale-[1.2] hidden sm:block"
           alt=""
         />
         <div className="max-w-xl">

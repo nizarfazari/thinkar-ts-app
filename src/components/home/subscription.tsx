@@ -54,7 +54,7 @@ export default function SubscriptionSection() {
           </div>
           <div className='lg:absolute top-[-50px] right-[-200px] static lg:order-none order-first'
           >
-            <img src="/ailens/subscrition.png" className='2xl:w-[1000px] xl:w-[600px] lg:w-[500px]' alt="" />
+            <img src="/ailens/subscrition.png" className='2xl:w-[1000px] xl:w-[900px] lg:w-[500px]' alt="" />
           </div>
         </div>
       </div>
