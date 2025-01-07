@@ -2,8 +2,8 @@ import { Specs } from "../components/ailens/Specs";
 import { Features } from "../components/ailens/Feature";
 
 
-import { HeroAilens } from "@/components/ailens/hero";
 import SubscriptionAilens from "@/components/ailens/subscription";
+import { HeroAilens } from "@/components/ailens/HeroAilens";
 
 export default function Ailens() {
   return (
