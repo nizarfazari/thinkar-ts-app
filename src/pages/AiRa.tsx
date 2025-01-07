@@ -19,7 +19,7 @@ export default function Aira() {
       </section>
 
       {/* Various Features Section */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div>
             <img
