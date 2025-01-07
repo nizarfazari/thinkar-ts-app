@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 
 
-export function Hero() {
+export function HeroAilens() {
     return (
         <section className="container mx-auto flex flex-col md:flex-row items-center justify-between relative h-auto md:h-[200px] px-6 md:px-20 py-12 md:py-0">
 

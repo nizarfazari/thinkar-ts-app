@@ -29,19 +29,19 @@ interface FeatureCardProps {
     const features: Feature[] = [
       {
         title: "Various Features",
-        image: "/home/features/Group 112.png",
+        image: "/ailens/features/feature-1.png",
       },
       {
         title: "Lightweight Design",
-        image: "/home/features/Group 111.png",
+        image: "/ailens/features/feature-2.png",
       },
       {
         title: "Intuitive Operation",
-        image: "/home/features/Group 110.png",
+        image: "/ailens/features/feature-3.png",
       },
       {
         title: "iOS APP",
-        image: "/home/features/Group 109.png",
+        image: "/ailens/features/feature-4.png",
       },
     ];
   
