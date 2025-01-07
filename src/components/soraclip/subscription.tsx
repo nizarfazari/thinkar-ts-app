@@ -52,9 +52,9 @@ export default function SubscriptionAilens() {
               </form>
             </div>
           </div>
-          <div className='lg:absolute   top-[-10px] right-0 static lg:order-none order-first'
+          <div className='lg:absolute top-[-10px] right-[40px] static lg:order-none order-first'
           >
-            <img src="/soraclip/details/subscriptions.png" className='2xl:w-[800px] xl:w-[800px] lg:w-[500px]' alt="" />
+            <img src="/soraclip/details/subscriptions.png" className='2xl:w-[550px] xl:w-[400px] lg:w-[500px]' alt="" />
           </div>
         </div>
       </div>
