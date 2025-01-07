@@ -16,12 +16,16 @@ export function Hero() {
          
 
             <div className="w-full md:w-2/3 relative">
-                <div className="relative w-full h-[497px] max-w-[800px] overflow-hidden">
-                    <video  controls className="absolute top-[-15px] px-4 left-0 w-full h-full rounded-md z-20">
+                <div className="relative w-full h-[497px] overflow-hidden">
+                    <video  controls className="absolute top-0 left-0 w-full h-full object-cover rounded-xl 2xl:px-7 py-4">
                         <source src="/video/home.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <img src="/home/border.png" alt="Device Frame" className="relative z-10 w-full  h-full" />
+                    <img 
+                        src="/home/border.png" 
+                        alt="Device Frame" 
+                        className="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" 
+                    />
                 </div>
             </div>
         </section>
