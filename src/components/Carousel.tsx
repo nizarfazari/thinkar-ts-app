@@ -137,7 +137,7 @@ export default function VideoCarousel() {
                                     <img
                                         src={slide.thumbnailUrl}
                                         alt={`${slide.title} thumbnail`}
-                                        className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'
+                                        className={`absolute pointer-events-none inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'
                                             }`}
                                     />
                                   

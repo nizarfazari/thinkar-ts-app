@@ -13,18 +13,20 @@ export function Hero() {
                 </h1>
             </div>
 
-         
+
 
             <div className="w-full md:w-2/3 relative">
                 <div className="relative w-full h-[497px] overflow-hidden">
-                    <video  controls className="absolute top-0 left-0 w-full h-full object-cover rounded-xl 2xl:px-7 py-4">
-                        <source src="/video/home.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <img 
-                        src="/home/border.png" 
-                        alt="Device Frame" 
-                        className="absolute top-0 left-0 w-full h-full z-10 pointer-events-none" 
+                    <div className="relative h-[480px] w-full">
+                        <video controls className="absolute top-[20px] left-[30px] w-calc object-cover">
+                            <source src="/video/home.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img
+                        src="/home/border.png"
+                        alt="Device Frame"
+                        className="absolute top-0 left-0 w-full h-full z-10 pointer-events-none"
                     />
                 </div>
             </div>

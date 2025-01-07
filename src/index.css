@@ -102,3 +102,10 @@ video-carousel .slick-slide {
 .bg-main {
   background: linear-gradient(to bottom,#D5E9F4,#E8ECED);
 }
+
+
+.w-calc {
+  width: calc(100% - 60px);
+  height: calc(100% - 22px);
+
+}
