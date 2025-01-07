@@ -18,7 +18,7 @@ export function Hero() {
             <div className="w-full md:w-2/3 relative">
                 <div className="relative w-full h-[497px] overflow-hidden">
                     <div className="relative h-[480px] w-full">
-                        <video controls className="absolute top-[20px] left-[30px] w-calc object-cover">
+                        <video controls className="absolute top-[20px] left-[28px] w-calc object-cover">
                             <source src="/video/home.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
