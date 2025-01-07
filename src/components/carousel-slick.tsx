@@ -98,7 +98,7 @@ export default function CarouselSlick() {
         centerMode: true,
         centerPadding: '0px',
         focusOnSelect: true,
-        beforeChange: (current: number, next: number) => {
+        beforeChange: (_: number, next: number) => {
             setCurrentSlide(next)
             setPlayingSlide(null)
             setVideoVisible(null)
