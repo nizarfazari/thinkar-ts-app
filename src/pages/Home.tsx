@@ -14,15 +14,15 @@ export default function Home() {
                     <Hero />
                 </div>
             </section>
-            <section className="min-h-screen   pb-14 overflow-hidden relative">
+            <section className=" pb-14 overflow-hidden relative">
                 <Carousel />
             </section>
 
-            <section className="min-h-screen  overflow-hidden">
+            <section className="  overflow-hidden">
                 <Description />
             </section>
 
-            <section className="min-h-screen    overflow-x-clip">
+            <section className="    overflow-x-clip">
                 <SubscriptionSection />
             </section>
 

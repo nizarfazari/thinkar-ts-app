@@ -108,7 +108,7 @@ export default function VideoCarousel() {
                 {/* Header */}
                 <div className='flex flex-col md:flex-row mb-12 justify-between items-start md:items-center'>
                     <div className="mb-6 md:mb-0">
-                        <h1 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold mb-4">
+                        <h1 className="text-6xl md:text-5xl leading-tight md:leading-[60px] font-semibold mb-4">
                             <span className="text-[#3B82F6]">AI-Powered</span>{' '}
                             <span className="text-[#5F5F5F]">Solutions.</span>
                         </h1>

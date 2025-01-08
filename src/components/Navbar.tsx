@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-10">
                     <img src="/home/logo.png" alt="Logo" className="w-28 mr-[120px]" />
 
-                    <div className="hidden font-semibold md:flex items-center space-x-[80px]">
+                    <div className="hidden font-extrabold md:flex items-center space-x-[80px]">
                         <Link
                             to="/"
                             className="hover:text-gray-400 transition"
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-10 text-white">
                     <InstagramLogo size={28} />
                     <WhatsappLogo size={28} />
-                    <div className="hidden md:block relative w-[240px] bg-[#55A8EB] px-5 py-2 rounded-full">
+                    <div className="hidden md:block relative w-[240px] bg-[#55A8EB] px-5 py-1 rounded-full">
                         <div className="relative flex items-center p-1 text-white">
                             <motion.div
                                 layout

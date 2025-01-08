@@ -116,7 +116,7 @@ export default function Ailens() {
       </section>
 
       {/* Subscription Section */}
-      <section className="min-h-screen overflow-x-clip mt-20">
+      <section className="pb-20 overflow-x-clip mt-20">
         <SubscriptionAilens />
       </section>
     </main>
