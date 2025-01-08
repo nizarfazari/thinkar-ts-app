@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <main >
             <section className="min-h-[700px]  text-[#5F5F5F] overflow-hidden flex flex-col">
-                <div className="flex-1 2xl:pt-52">
+                <div className="flex-1 xl:pt-52">
                     <Hero />
                 </div>
             </section>
@@ -22,7 +22,7 @@ export default function Home() {
                 <Description />
             </section>
 
-            <section className="    overflow-x-clip">
+            <section className=" pb-40   overflow-x-clip">
                 <SubscriptionSection />
             </section>
 
