@@ -13,9 +13,9 @@ export default function SubscriptionAilens() {
   }
 
   return (
-    <div className="relative">
+    <div className="">
       {/* Content Container */}
-      <div className="container mx-auto py-24 flex ">
+      <div className="relative container mx-auto py-24 flex ">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="max-w-[580px] space-y-12 md:space-y-24 lg:space-y-44 mb-12 lg:mb-0">
             {/* Description Text */}

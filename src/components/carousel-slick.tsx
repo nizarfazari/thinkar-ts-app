@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useState, useRef, useCallback } from 'react'
+import  { useState, useRef, useCallback } from 'react'
 import { ArrowRight } from 'lucide-react'
-import { Play, Pause } from '@phosphor-icons/react'
+import { Play } from '@phosphor-icons/react'
 import Slider from 'react-slick'
 import ReactPlayer from 'react-player'
 import { Card } from '@/components/ui/card'
@@ -65,24 +65,12 @@ export default function CarouselSlick() {
 
     const goToSlide = useCallback((index: number) => {
         setCurrentSlide(index)
-        setVideoVisible(index)
+     
         sliderRef.current?.slickGoTo(index)
     }, [])
 
-    const handlePlayClick = useCallback((index: number, e: React.MouseEvent) => {
-        e.stopPropagation()
-        if (playingSlide === index) {
-            setPlayingSlide(null)
-        } else {
-            setPlayingSlide(index)
-            setVideoVisible(index)
-        }
-    }, [playingSlide])
 
-    const handleCardClick = useCallback((index: number) => {
-        goToSlide(index)
-        handlePlayClick(index, {} as React.MouseEvent)
-    }, [goToSlide, handlePlayClick])
+
 
     const nextSlide = useCallback(() => {
         sliderRef.current?.slickNext()
@@ -120,7 +108,7 @@ export default function CarouselSlick() {
     }
 
     return (
-        <div className="bg-[#041434]">
+        <div >
             <div className="container mx-auto py-12">
                 {/* Header */}
                 <div className='flex flex-col md:flex-row mb-12 justify-between items-start md:items-center'>
@@ -132,7 +120,7 @@ export default function CarouselSlick() {
                         <h2 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold text-white">Global Impact.</h2>
                     </div>
 
-                
+
                 </div>
 
                 {/* Carousel Container */}
@@ -141,17 +129,22 @@ export default function CarouselSlick() {
                         {slides.map((slide, index) => (
                             <div key={slide.id} className="px-2">
                                 <Card
-                                    onClick={() => handleCardClick(index)}
-                                    className={`transform transition-all duration-500 ease-in-out group relative rounded-3xl overflow-hidden cursor-pointer`}
+                                    key={slide.id}
+                                    onClick={() => goToSlide(index)}
+                                    className={`transform transition-all duration-500 !border-none ease-in-out group ${index === currentSlide
+                                        ? 'flex-grow-[2] opacity-100 w-full md:w-[600px]'
+                                        : 'flex-grow-0 opacity-60 w-[100px] md:w-[200px] cursor-pointer'
+                                        } relative rounded-3xl overflow-hidden`}
                                 >
-                                    <div className={`relative h-[400px] ${index === currentSlide ? 'w-[350px] md:w-[700px]' : 'w-[300px] md:w-[400px]'}`}>
+                                    <div className="relative h-[300px] wrapper-vidio md:h-[400px]">
                                         {/* Thumbnail */}
                                         <img
                                             src={slide.thumbnailUrl}
                                             alt={`${slide.title} thumbnail`}
-                                            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'}`}
+                                            className={`absolute pointer-events-none inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${videoVisible === index ? 'opacity-0' : 'opacity-100'
+                                                }`}
                                         />
-                                        <div className={`absolute inset-0 bg-blue-700/80 mix-blend-multiply ${videoVisible === index ? 'opacity-0 z-[-2px]' : 'opacity-100'}`} />
+
 
                                         {/* Video Player */}
                                         <ReactPlayer
@@ -162,7 +155,7 @@ export default function CarouselSlick() {
                                             height="100%"
                                             playing={playingSlide === index}
                                             loop
-                                            volume={playingSlide === index ? 1 : 0}
+                                            volume={0.5}
                                             controls={index === currentSlide}
                                             playsinline
                                             style={{ display: videoVisible === index ? 'block' : 'none' }}
@@ -175,17 +168,17 @@ export default function CarouselSlick() {
                                             }}
                                         />
 
+
                                         <button
-                                            onClick={(e) => handlePlayClick(index, e)}
-                                            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-4 transition-opacity duration-300 border-4 border-solid border-white ${videoVisible === index && playingSlide === index ? 'opacity-0' : 'opacity-100'
+                                            onClick={(e) => {
+                                                e.stopPropagation()
+                                                goToSlide(index)
+                                            }}
+                                            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-full p-4 transition-opacity duration-300 border-4 border-solid border-white ${videoVisible === index && playingSlide === index ? 'opacity-0' : 'opacity-100'
                                                 }`}
                                             aria-label={playingSlide === index ? "Pause" : "Play"}
                                         >
-                                            {playingSlide === index ? (
-                                                <Pause weight="fill" className="w-8 h-8 text-white" />
-                                            ) : (
-                                                <Play weight="fill" className="w-8 h-8 text-white" />
-                                            )}
+                                            <Play weight="fill" className="w-8 h-8 text-white" />
                                         </button>
                                     </div>
                                 </Card>
@@ -210,12 +203,12 @@ export default function CarouselSlick() {
                                 onClick={() => goToSlide(index)}
                                 variant={currentSlide === index ? "default" : "ghost"}
                                 className={`
-                                    px-3 py-1 md:px-6 md:py-2 text-sm md:text-base rounded-full transition-all shadow-lg
-                                    ${currentSlide === index
-                                        ? 'bg-black text-white hover:bg-black/90'
-                                        : 'bg-[#062043] text-white hover:text-white hover:bg-[#062043]/80'
+                                                     px-3 py-1 md:px-6 md:py-2 text-sm md:text-base rounded-full transition-all shadow-lg
+                                                     ${currentSlide === index
+                                        ? 'bg-[#2697FF] text-white hover:bg-[#2697FF]/90'
+                                        : 'bg-[#71AED0] text-white hover:text-white hover:bg-[#71AED0]/80'
                                     }
-                                `}
+                                                 `}
                             >
                                 {slide.title}
                             </Button>
