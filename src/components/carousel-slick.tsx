@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useRef, useCallback } from 'react'
+import  { useState, useRef, useCallback } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { Play, Pause } from '@phosphor-icons/react'
 import Slider from 'react-slick'
