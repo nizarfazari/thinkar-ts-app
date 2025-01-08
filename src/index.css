@@ -105,7 +105,8 @@ video-carousel .slick-slide {
 
 
 .w-calc {
-  width: calc(100% - 60px);
+  width: calc(100% - 50px);
   height: calc(100% - 22px);
 
 }
+

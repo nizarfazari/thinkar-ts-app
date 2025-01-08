@@ -65,7 +65,6 @@ export default function CarouselSlick() {
 
     const goToSlide = useCallback((index: number) => {
         setCurrentSlide(index)
-     
         sliderRef.current?.slickGoTo(index)
     }, [])
 
