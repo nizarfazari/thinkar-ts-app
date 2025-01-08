@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-10">
                     <img src="/home/logo.png" alt="Logo" className="w-28 mr-[120px]" />
 
-                    <div className="hidden md:flex items-center space-x-[80px]">
+                    <div className="hidden font-semibold md:flex items-center space-x-[80px]">
                         <Link
                             to="/"
                             className="hover:text-gray-400 transition"

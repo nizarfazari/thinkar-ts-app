@@ -132,9 +132,7 @@ export default function CarouselSlick() {
                         <h2 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold text-white">Global Impact.</h2>
                     </div>
 
-                    <div>
-                        <p className='max-w-[450px] text-white text-base md:text-lg font-[300] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
-                    </div>
+                
                 </div>
 
                 {/* Carousel Container */}

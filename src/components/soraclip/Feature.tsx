@@ -12,7 +12,7 @@ interface FeatureCardProps {
           className=" object-cover object-center"
         />
         <div className="absolute inset-0 flex items-center justify-start p-6">
-          <h3 className="text-xl font-semibold text-white w-[100px]">
+          <h3 className="text-xl font-semibold text-white w-[120px]">
             {title}
           </h3>
         </div>
@@ -28,11 +28,11 @@ interface FeatureCardProps {
   export function Features() {
     const features: Feature[] = [
       {
-        title: "160-inch 4K Screen",
+        title: "Open-ear Open-mind",
         image: "/soraclip/features/feature-1.png",
       },
       {
-        title: "Seamless Connectivity",
+        title: "C-bridge Desgin",
         image: "/soraclip/features/feature-2.png",
       },
       {
@@ -40,7 +40,7 @@ interface FeatureCardProps {
         image: "/soraclip/features/feature-3.png",
       },
       {
-        title: "4 Color Options",
+        title: "Long Hour To Play",
         image: "/soraclip/features/feature-4.png",
       },
     ];

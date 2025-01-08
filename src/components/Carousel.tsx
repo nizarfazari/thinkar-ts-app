@@ -115,9 +115,7 @@ export default function VideoCarousel() {
                         <h2 className="text-4xl md:text-5xl leading-tight md:leading-[60px] font-semibold text-[#5F5F5F]">Global Impact.</h2>
                     </div>
 
-                    <div>
-                        <p className='max-w-[450px] text-[#5F5F5F] text-base md:text-lg font-[300] font-inter leading-[30px]'>Elevate connectivity with AR glasses seamlessly integrate calls, music, translation, navigation, and AI assistants.</p>
-                    </div>
+
                 </div>
 
                 {/* Carousel Container */}
@@ -151,6 +149,7 @@ export default function VideoCarousel() {
                                         height="100%"
                                         playing={playingSlide === index}
                                         loop
+                                        volume={0.5} 
                                         controls={index === currentSlide}
                                         playsinline
                                         style={{ display: videoVisible === index ? 'block' : 'none' }}

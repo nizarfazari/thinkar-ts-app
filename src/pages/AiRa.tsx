@@ -30,12 +30,12 @@ export default function Aira() {
           </div>
           <div className="flex flex-col justify-center text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
-            160-inch 4K Screen
+              160-inch 4K Screen
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
-            Transform your viewing experience with a massive 160-inch 4K display, bringing cinematic visuals to life wherever you are.
+              Transform your viewing experience with a massive 160-inch 4K display, bringing cinematic visuals to life wherever you are.
             </p>
-          
+
           </div>
         </div>
       </section>
@@ -45,11 +45,10 @@ export default function Aira() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className="order-2 md:order-1 flex flex-col justify-center text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
-              Light Design
+            Seamless Connectivity
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed max-w-xl mx-auto md:mx-0 font-inter">
-              At just 37g, AiLens is designed to be ultra-lightweight for
-              maximum comfort and ease of wear.
+            Easily connect via Type-C to your PC, smartphone, or game console for an unparalleled immersive experience.
             </p>
           </div>
           <div className="order-1 md:order-2">
@@ -74,11 +73,10 @@ export default function Aira() {
           </div>
           <div className="flex flex-col justify-center text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
-              Intuitive Operation
+            Lightweight Design
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
-              Seamlessly access a wide range of features through voice commands,
-              simple button operations, swipe gestures, and tap controls.
+            Designed for comfort and portability, AiRA redefines AR glasses with its ultra-light frame.
             </p>
           </div>
         </div>
@@ -89,11 +87,10 @@ export default function Aira() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className="order-2 md:order-1 flex flex-col justify-center text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
-              iOS APP
+              4 Color Options
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed max-w-xl mx-auto md:mx-0 font-inter">
-              Comes with a dedicated application for enhanced functionality and
-              seamless control.
+              Four versatile colors to express your unique personality every day.
             </p>
           </div>
           <div className="order-1 md:order-2">
