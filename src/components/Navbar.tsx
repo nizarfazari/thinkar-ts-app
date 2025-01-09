@@ -5,12 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [toggle, setToggle] = useState<'left' | 'right'>('right');
-    const location = useLocation();
 
-    const handleToggle = (position: 'left' | 'right') => {
-        setToggle(position);
-    };
+    const location = useLocation();
 
     const isActive = (path: string) => {
         return location.pathname === path ? '#5F5F5F' : '#FFFFFF';
