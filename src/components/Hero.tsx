@@ -43,14 +43,16 @@ export function Hero() {
                     >
                         <video
                             ref={videoRef}
-                            playsInline
-                            muted={!isPlaying}
+                            controls
+
                             loop
                             className="absolute top-[20px] lg:left-[24px] left-[10px] w-calc object-cover rounded-xl"
                             preload="metadata"
+                            src="/video/home.mp4"
+                             
                         >
-                            <source src="/video/home.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
+                            
+                            
                         </video>
                         {!isPlaying && (
                             <div className="absolute inset-0 flex items-center justify-center ">
