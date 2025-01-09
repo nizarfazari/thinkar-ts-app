@@ -64,30 +64,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-10 text-white">
                     <InstagramLogo size={28} />
                     <WhatsappLogo size={28} />
-                    <div className="hidden md:block relative w-[240px] bg-[#55A8EB] px-5 py-1 rounded-full">
-                        <div className="relative flex items-center p-1 text-white">
-                            <motion.div
-                                layout
-                                className="absolute bg-gradient-to-r from-[#1F78CD] to-[#4B86B0] shadow-md top-0 bottom-0 w-1/2 rounded-full"
-                                animate={{ left: toggle === 'left' ? '0%' : '50%' }}
-                                transition={{ duration: 0.3 }}
-                            />
-                            <button
-                                type="button"
-                                className="w-1/2 text-center relative z-10 focus:outline-none"
-                                onClick={() => handleToggle('left')}
-                            >
-                                AiLens
-                            </button>
-                            <button
-                                type="button"
-                                className="w-1/2 text-center relative z-10 focus:outline-none"
-                                onClick={() => handleToggle('right')}
-                            >
-                                Buy Now
-                            </button>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <div className="md:hidden flex items-center">
