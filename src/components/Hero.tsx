@@ -64,7 +64,7 @@ export function Hero() {
                 </h1>
             </div>
 
-            <div className="w-[80%]  relative shadow-wrapper">
+            <div className="w-full  relative shadow-wrapper">
                 <div className="relative w-full mx-auto h-[600px] overflow-hidden">
                     <div 
                         className="relative h-[600px] w-full cursor-pointer"
@@ -78,7 +78,7 @@ export function Hero() {
                             ref={videoRef}
                             controls
                             loop
-                            className="absolute top-[20px] lg:left-[24px] left-[10px] w-calc object-cover rounded-xl"
+                            className="rounded-xl"
                             preload="metadata"
                             src="/video/home.mp4"
                             poster={thumbnail || undefined}
