@@ -4,7 +4,9 @@ import React, { useRef, useState } from 'react';
 
 export function Hero() {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const canvasRef = useRef<HTMLCanvasElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [thumbnail, setThumbnail] = useState<string>('');
 
     const toggleVideo = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
         e.preventDefault();
@@ -23,6 +25,37 @@ export function Hero() {
         }
     };
 
+    const captureThumbnail = () => {
+        const video = videoRef.current;
+        const canvas = canvasRef.current;
+        
+        if (video && canvas) {
+            // Set canvas dimensions to match video
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            
+            // Draw the current video frame
+            const ctx = canvas.getContext('2d');
+            if (ctx) {
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                // Convert to data URL
+                const dataUrl = canvas.toDataURL('image/jpeg');
+                setThumbnail(dataUrl);
+                
+                // Set as video poster
+                video.poster = dataUrl;
+            }
+        }
+    };
+
+    // Load metadata handler to enable thumbnail capture
+    const handleLoadedMetadata = () => {
+        if (videoRef.current) {
+            // Capture initial thumbnail
+            captureThumbnail();
+        }
+    };
+
     return (
         <section className="container mx-auto flex flex-col md:flex-row items-center justify-between relative h-auto md:h-[200px] gap-10 pt-10">
             <div className="w-full md:w-1/2 space-y-4">
@@ -32,9 +65,9 @@ export function Hero() {
             </div>
 
             <div className="w-full md:w-2/3 relative shadow-wrapper">
-                <div className="relative max-w-[800px] mx-auto h-[497px] overflow-hidden ">
+                <div className="relative max-w-[800px] mx-auto h-[497px] overflow-hidden">
                     <div 
-                        className="relative h-[480px] w-full cursor-pointer "
+                        className="relative h-[480px] w-full cursor-pointer"
                         onClick={toggleVideo}
                         onTouchEnd={toggleVideo}
                         role="button"
@@ -44,25 +77,27 @@ export function Hero() {
                         <video
                             ref={videoRef}
                             controls
-
                             loop
                             className="absolute top-[20px] lg:left-[24px] left-[10px] w-calc object-cover rounded-xl"
                             preload="metadata"
                             src="/video/home.mp4"
-                             
-                        >
-                            
-                            
-                        </video>
+                            poster={thumbnail || undefined}
+                            onLoadedMetadata={handleLoadedMetadata}
+                        />
+                        {/* Hidden canvas for thumbnail capture */}
+                        <canvas 
+                            ref={canvasRef} 
+                            className="hidden"
+                        />
                         {!isPlaying && (
-                            <div className="absolute inset-0 flex items-center justify-center ">
+                            <div className="absolute inset-0 flex items-center justify-center">
                                 <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" fillRule="evenodd" />
                                 </svg>
                             </div>
                         )}
+                      
                     </div>
-               
                 </div>
             </div>
         </section>
