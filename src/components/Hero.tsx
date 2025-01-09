@@ -32,9 +32,9 @@ export function Hero() {
             </div>
 
             <div className="w-full md:w-2/3 relative shadow-wrapper">
-                <div className="relative max-w-[800px] mx-auto h-[497px] overflow-hidden">
+                <div className="relative max-w-[800px] mx-auto h-[497px] overflow-hidden ">
                     <div 
-                        className="relative h-[480px] w-full cursor-pointer"
+                        className="relative h-[480px] w-full cursor-pointer "
                         onClick={toggleVideo}
                         onTouchEnd={toggleVideo}
                         role="button"
@@ -44,7 +44,7 @@ export function Hero() {
                         <video
                             ref={videoRef}
                             playsInline
-                            
+                            muted={!isPlaying}
                             loop
                             className="absolute top-[20px] lg:left-[24px] left-[10px] w-calc object-cover rounded-xl"
                             preload="metadata"
