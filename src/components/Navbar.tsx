@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { InstagramLogo, WhatsappLogo } from "@phosphor-icons/react";
 import { Link, useLocation } from 'react-router-dom';
@@ -7,6 +7,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     const location = useLocation();
+
 
     const isActive = (path: string) => {
         return location.pathname === path ? '#5F5F5F' : '#FFFFFF';
@@ -60,7 +61,12 @@ const Navbar = () => {
                 <div className="flex items-center gap-10 text-white">
                     <InstagramLogo size={28} />
                     <WhatsappLogo size={28} />
-                   
+                    <button
+                        type="button"
+                        className="px-5 py-1 bg-gradient-to-r from-[#1F78CD] to-[#4B86B0] shadow-md text-center rounded-full relative z-10 focus:outline-none"
+                    >
+                        Buy Now
+                    </button>
                 </div>
 
                 <div className="md:hidden flex items-center">
