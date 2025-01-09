@@ -46,7 +46,7 @@ export function Hero() {
                             playsInline
                             
                             loop
-                            className="absolute top-[20px] lg:left-[24px] left-[10px] w-calc object-cover"
+                            className="absolute top-[20px] lg:left-[24px] left-[10px] w-calc object-cover rounded-xl"
                             preload="metadata"
                         >
                             <source src="/video/home.mp4" type="video/mp4" />
@@ -60,11 +60,7 @@ export function Hero() {
                             </div>
                         )}
                     </div>
-                    <img
-                        src="/home/border.png"
-                        alt="Device Frame"
-                        className="absolute top-0 left-0 w-full h-full z-10 pointer-events-none"
-                    />
+               
                 </div>
             </div>
         </section>
