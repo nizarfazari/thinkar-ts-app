@@ -8,7 +8,7 @@ export default function Footer() {
                             href="/about"
                             className="text-gray-200 hover:text-white transition-colors"
                         >
-                            <img src="/home/logo.png" className="w-28" alt="" />
+                            <img src="/logo-3.png" className="w-28 " alt="" />
                         </a>
                     </li>
                     <li>

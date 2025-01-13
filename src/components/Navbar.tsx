@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full shadow-header z-50 h-[150px] ">
             <div className="container mx-auto flex items-center justify-between ">
                 <div className="flex items-center gap-10">
-                    <img src="/home/logo.png" alt="Logo" className="w-28 mr-[120px]" />
+                    <img src="/logo-3.png" alt="Logo" className="w-28 mr-[120px]" />
 
                     <div className="hidden font-extrabold md:flex items-center space-x-[80px]">
                         <Link
