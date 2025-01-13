@@ -5,7 +5,7 @@ export default function Details() {
                 {/* C-bridge Design */}
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h2 className="text-3xl font-bold text-blue-500 mb-4">C-bridge Design</h2>
+                        <h2 className="text-3xl font-bold text-[#2697FF] mb-4">C-bridge Design</h2>
                         <p className="text-gray-600">
                             The minimalist spherical shape makes earbuds stylish, while the ergonomic design ensures comfort and feather-light wearing.
                         </p>
@@ -30,7 +30,7 @@ export default function Details() {
 
                 {/* Open-ear Section */}
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-blue-500 mb-4">Open-ear, open mind.</h2>
+                    <h2 className="text-3xl font-bold text-[#2697FF] mb-4">Open-ear, open mind.</h2>
                     <p className="text-gray-600 mb-8">
                         Immerse yourself in crystal-clear sound.
                     </p>
@@ -45,7 +45,7 @@ export default function Details() {
 
                 {/* Battery Life */}
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-blue-500 mb-4">Long Hour to Play</h2>
+                    <h2 className="text-3xl font-bold text-[#2697FF] mb-4">Long Hour to Play</h2>
                     <p className="text-gray-600 mb-8">
                         Listen for up to 28 hours with a fully charged charging case. Wearing a single earbud while having a fully charged charging case ensures a longer battery life.
                     </p>

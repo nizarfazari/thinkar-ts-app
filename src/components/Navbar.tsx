@@ -48,13 +48,7 @@ const Navbar = () => {
                         >
                             SoraClip
                         </Link>
-                        <Link
-                            to="/support"
-                            className="hover:text-gray-400 transition"
-                            style={{ color: isActive('/support') }}
-                        >
-                            Support
-                        </Link>
+                      
                     </div>
                 </div>
 

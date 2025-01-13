@@ -30,7 +30,7 @@ export default function Ailens() {
             />
           </div>
           <div className="flex flex-col justify-center text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">
               Various features
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
@@ -53,7 +53,7 @@ export default function Ailens() {
       <section className="container mx-auto px-4 mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className="order-2 md:order-1 flex flex-col justify-center text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">
               Light Design
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed max-w-xl mx-auto md:mx-0 font-inter">
@@ -82,7 +82,7 @@ export default function Ailens() {
             />
           </div>
           <div className="flex flex-col justify-center text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">
               Intuitive Operation
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
@@ -97,7 +97,7 @@ export default function Ailens() {
       <section className="container mx-auto px-4 mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className="order-2 md:order-1 flex flex-col justify-center text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-500">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">
               iOS APP
             </h1>
             <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed max-w-xl mx-auto md:mx-0 font-inter">

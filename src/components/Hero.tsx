@@ -56,7 +56,7 @@ export function Hero() {
             {/* Heading Section */}
             <div className="w-[800px] space-y-4">
                 <h1 className="text-[2.5rem] sm:text-2xl md:text-6xl font-semibold leading-[1.3] sm:leading-[1.2] md:leading-[60px] font-redhat text-center md:text-left">
-                    Enhancing <span className="text-blue-400">Vision</span> <br /> Empowering You
+                    Enhancing <span className="text-[#2697FF]">Vision</span> <br /> Empowering You
                 </h1>
             </div>
 
