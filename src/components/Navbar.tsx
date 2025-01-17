@@ -12,6 +12,9 @@ const Navbar = () => {
     const isActive = (path: string) => {
         return location.pathname === path ? '#5F5F5F' : '#FFFFFF';
     };
+    const isActiveMobile = (path: string) => {
+        return location.pathname === path ? '#2697FF' : '#5F5F5F';
+    };
 
     return (
         <nav className="fixed top-0 left-0 w-full shadow-header z-50 h-[150px] ">
@@ -87,29 +90,29 @@ const Navbar = () => {
                     >
                         <Link
                             to="/"
-                            className="block py-3 px-4 !text-black hover:bg-blue-200 hover:text-blue-900 transition duration-300"
-                            style={{ color: isActive('/') }}
+                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActiveMobile('/') }}
                         >
                             Home
                         </Link>
                         <Link
                             to="/ailens"
-                            className="block py-3 px-4 !text-black/80 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
-                            style={{ color: isActive('/store') }}
+                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActiveMobile('/ailens') }}
                         >
                             Ailens
                         </Link>
                         <Link
                             to="/aira"
-                            className="block py-3 px-4 !text-black/80 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
-                            style={{ color: isActive('/aira') }}
+                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActiveMobile('/aira') }}
                         >
                             AiRa
                         </Link>
                         <Link
                             to="/soraclip"
-                            className="block py-3 px-4 !text-black/80 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
-                            style={{ color: isActive('/soraclip') }}
+                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActiveMobile('/soraclip') }}
                         >
                             SoraClip
                         </Link>
