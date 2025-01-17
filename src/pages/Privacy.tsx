@@ -1,8 +1,8 @@
 export default function Privacy() {
     return (
-        <div className="container mx-auto px-60 mt-20 mb-32">
-            <h1 className="text-6xl md:text-5xl font-bold text-[#2697FF]">Privacy Policy</h1>
-            <p className="text-end font-bold text-gray-500">Last update : 2024/07/19</p>
+        <div className="container mx-auto px-6 md:px-16 lg:px-32 xl:px-40 mt-20 mb-32">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">Privacy Policy</h1>
+            <p className="text-end font-bold text-gray-500 mt-10">Last update : 2024/07/19</p>
             <div className="mt-20">
                 <h2 className="text-4xl md:text-5xl font-bold text-[#2697FF]">Introduction</h2>
                 <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">AILens Group (“AILens”, “we”, “our” or “us”) cares about the security and privacy of your personal data. This Privacy Policy describes how AILens collects, uses and shares your personal data. In addition to this Privacy Policy, we provide data and privacy information embedded in our products and certain features that ask to use your personal data. </p>
