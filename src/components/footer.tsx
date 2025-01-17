@@ -13,7 +13,7 @@ export default function Footer() {
                     </li>
                     <li>
                         <a
-                            href="/about"
+                            href="/products"
                             className="text-gray-200 hover:text-white transition-colors"
                         >
                             About Us
@@ -29,7 +29,7 @@ export default function Footer() {
                     </li>
                     <li>
                         <a
-                            href="/privacy"
+                            href="/privacy-policy"
                             className="text-gray-200 hover:text-white transition-colors"
                         >
                             Privacy Policy
@@ -37,7 +37,7 @@ export default function Footer() {
                     </li>
                     <li>
                         <a
-                            href="/contact"
+                            href="/contact-us"
                             className="text-gray-200 hover:text-white transition-colors"
                         >
                             Contact Us

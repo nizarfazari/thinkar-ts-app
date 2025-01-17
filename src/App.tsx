@@ -7,6 +7,8 @@ import Aira from "./pages/AiRa";
 import Soraclip from "./pages/Soraclip";
 import OurVision from "./pages/OurVision";
 import ContactUs from "./pages/ContactUs";
+import Product from "./pages/Product";
+import Privacy from "./pages/Privacy";
 
 
 
@@ -21,6 +23,8 @@ function App() {
           <Route path="/ailens" element={<Ailens />} />
           <Route path="/our-vision" element={<OurVision />} />
           <Route path="/contact-us" element={<ContactUs  />} />
+          <Route path="/products" element={<Product  />} />
+          <Route path="/privacy-policy" element={<Privacy  />} />
         </Route>
 
       </Routes>
