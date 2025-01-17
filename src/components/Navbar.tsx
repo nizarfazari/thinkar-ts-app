@@ -51,6 +51,20 @@ const Navbar = () => {
                         >
                             SoraClip
                         </Link>
+                        <Link
+                            to="/our-vision"
+                            className="hover:text-gray-400 transition"
+                            style={{ color: isActive('/our-vision') }}
+                        >
+                            Our Vision
+                        </Link>
+                        <Link
+                            to="/contact-us"
+                            className="hover:text-gray-400 transition"
+                            style={{ color: isActive('/contact-us') }}
+                        >
+                            Contact Us
+                        </Link>
 
                     </div>
                 </div>
@@ -115,6 +129,20 @@ const Navbar = () => {
                             style={{ color: isActiveMobile('/soraclip') }}
                         >
                             SoraClip
+                        </Link>
+                        <Link
+                            to="/our-vision"
+                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActiveMobile('/our-vision') }}
+                        >
+                            Our Vision
+                        </Link>
+                        <Link
+                            to="/contact-us"
+                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActiveMobile('/contact-us') }}
+                        >
+                            Contact Us
                         </Link>
                         <div className='px-5'>
                             <button
