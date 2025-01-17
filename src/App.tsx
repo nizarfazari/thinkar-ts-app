@@ -6,7 +6,8 @@ import MainLayout from "./layouts/MainLayouts";
 import Aira from "./pages/AiRa";
 import Soraclip from "./pages/Soraclip";
 import OurVision from "./pages/OurVision";
-import ContactUs from "./pages/ContactUS";
+import ContactUs from "./pages/ContactUs";
+
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <Route path="/soraclip" element={<Soraclip />} />
           <Route path="/ailens" element={<Ailens />} />
           <Route path="/our-vision" element={<OurVision />} />
-          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/contact-us" element={<ContactUs  />} />
         </Route>
 
       </Routes>

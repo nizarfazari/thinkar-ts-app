@@ -95,7 +95,7 @@ export default function Soraclip() {
                         <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">
                         Long Hour to Play
                         </h1>
-                        <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] max-w-[500px] leading-relaxed max-w-xl mx-auto md:mx-0 font-inter">
+                        <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] max-w-[500px] leading-relaxed  mx-auto md:mx-0 font-inter">
                         Listen for for up to 28 hours with a fully charged charging case. Wearing a single earbud while having a fully charged charging case ensures a longer battery life*.
                         </p>
                         <p className="text-sm font-light mt-8 max-w-[500px]  text-[#5F5F5F]">
