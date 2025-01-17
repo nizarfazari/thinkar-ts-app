@@ -48,11 +48,11 @@ const Navbar = () => {
                         >
                             SoraClip
                         </Link>
-                      
+
                     </div>
                 </div>
 
-                <div className="flex items-center gap-10 text-white">
+                <div className="md:flex items-center gap-10 text-white hidden ">
                     <InstagramLogo size={28} />
                     <WhatsappLogo size={28} />
                     <button
@@ -83,32 +83,50 @@ const Navbar = () => {
                         animate={{ x: '0%' }}
                         exit={{ x: '100%' }}
                         transition={{ duration: 0.5, ease: 'easeInOut' }}
-                        className="md:hidden bg-gray-800 fixed top-0 right-0 w-3/4 h-full z-20 overflow-hidden mt-[55px]"
+                        className="md:hidden bg-blue-100 fixed top-0 right-0 w-3/4 h-full z-20 overflow-hidden mt-[55px] shadow-lg"
                     >
                         <Link
-                            to="/products"
-                            className="block py-3 px-4 hover:bg-gray-700 transition"
-                            style={{ color: isActive('/products') }}
+                            to="/"
+                            className="block py-3 px-4 !text-black hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActive('/') }}
                         >
-                            Products
+                            Home
                         </Link>
                         <Link
-                            to="/store"
-                            className="block py-3 px-4 hover:bg-gray-700 transition"
+                            to="/ailens"
+                            className="block py-3 px-4 !text-black/80 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActive('/store') }}
                         >
-                            Store
+                            Ailens
                         </Link>
                         <Link
-                            to="/support"
-                            className="block py-3 px-4 hover:bg-gray-700 transition"
-                            style={{ color: isActive('/support') }}
+                            to="/aira"
+                            className="block py-3 px-4 !text-black/80 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActive('/aira') }}
                         >
-                            Support
+                            AiRa
                         </Link>
+                        <Link
+                            to="/soraclip"
+                            className="block py-3 px-4 !text-black/80 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            style={{ color: isActive('/soraclip') }}
+                        >
+                            SoraClip
+                        </Link>
+                        <div className='px-5'>
+                            <button
+                                type="button"
+                                className="w-full  px-5 py-2 mt-5 mx-4 bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold shadow-md rounded-2xl hover:from-blue-500 hover:to-blue-600 focus:outline-none transition duration-300"
+                            >
+                                Buy Now
+                            </button>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
+
+
+
         </nav>
     );
 };
