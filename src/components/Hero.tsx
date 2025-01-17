@@ -74,7 +74,7 @@ export function Hero() {
                         {/* Video Element */}
                         <video
                             ref={videoRef}
-                            className="rounded-xl w-full h-full object-cover"
+                            className="rounded-xl w-full h-full object-cover appearance-none"
                             src="/video/home.mp4"
                             poster={thumbnail || undefined}
                             preload="metadata"
