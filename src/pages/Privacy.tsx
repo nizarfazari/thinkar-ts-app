@@ -1,20 +1,20 @@
 export default function Privacy() {
     return (
         <div className="container mx-auto px-6 md:px-16 lg:px-32 xl:px-40 mt-20 mb-32">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF]">Privacy Policy</h1>
+            <h1 className="text-4xl  md:text-5xl font-bold text-[#2697FF]">Privacy Policy</h1>
             <p className="text-end font-bold text-gray-500 mt-10">Last update : 2024/07/19</p>
             <div className="mt-20">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#2697FF]">Introduction</h2>
+                <h2 className="text-4xl  md:text-5xl font-bold text-[#2697FF]">Introduction</h2>
                 <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">AILens Group (“AILens”, “we”, “our” or “us”) cares about the security and privacy of your personal data. This Privacy Policy describes how AILens collects, uses and shares your personal data. In addition to this Privacy Policy, we provide data and privacy information embedded in our products and certain features that ask to use your personal data. </p>
             </div>
             <div className="mt-14">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#2697FF]">Overview</h2>
+                <h2 className="text-4xl  md:text-5xl font-bold text-[#2697FF]">Overview</h2>
                 <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
                     The Privacy Policy covers how we handle personal data whether you interact with us on our website (https://www.ThinkAR.com) (“Site”), through AiLens’s mobile apps (“Mobile Apps”) or in person (including by phone, through email or when visiting us). We may also link to third parties on our services or make third party apps available for connecting our product. Our Privacy Policy does not apply to how third parties define personal data or how they use it. We encourage you to read their privacy policies and know your privacy rights before interacting with them.
                 </p>
             </div>
             <div className="mt-14">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#2697FF]">Table of Content</h2>
+                <h2 className="text-4xl  md:text-5xl font-bold text-[#2697FF]">Table of Content</h2>
                 <ul className="space-y-4 list-disc list-inside">
                     {[
                         "What is Personal Data at AILens",
@@ -41,7 +41,7 @@ export default function Privacy() {
 
 
             <div className="mt-14">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#2697FF]">What is Personal Data at AILens</h2>
+                <h2 className="text-4xl  md:text-5xl font-bold text-[#2697FF]">What is Personal Data at AILens</h2>
                 <p className="mt-4 text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
                     We may or may not collect your personal data when you register with or access our Services or otherwise interact with AILens. The categories of information we may collect might include but are not limited to the categories described below:
                 </p>
@@ -94,7 +94,7 @@ export default function Privacy() {
             </div>
 
             <div className="mt-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#2697FF]">What is Personal Data at AILens</h2>
+                <h2 className="text-4xl  md:text-5xl font-bold text-[#2697FF]">What is Personal Data at AILens</h2>
                 <p className=" text-lg md:text-xl text-[#5F5F5F] leading-relaxed font-inter">
                     We may or may not collect your personal data when you register with or access our Services or otherwise interact with AILens. The categories of information we may collect might include but are not limited to the categories described below:
                 </p>
@@ -153,7 +153,7 @@ export default function Privacy() {
 
 
             <div className="mt-8">
-                <h1 className="text-5xl font-bold text-[#2697FF] mb-2">Permitted Disclosure of Personal Data</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] mb-2">Permitted Disclosure of Personal Data</h1>
                 <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                     We value your privacy. We do not share, sell, lease, transfer or otherwise disclose your personal data to third parties unless otherwise stated below:
                 </p>
@@ -218,7 +218,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">How We Protect Personal Data</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">How We Protect Personal Data</h1>
                 <div className="space-y-4">
                     <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter mt-4">
                         We use reasonable technical and organizational information security measures to provide appropriate protection for your personal information from leaking or unauthorized access and prevent such risks of providing personal information. We limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know. They will only process your personal data on our instructions and they are subject to a duty of confidentiality.
@@ -236,7 +236,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Data Retention Policy</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Data Retention Policy</h1>
                 <div className="space-y-4">
                     <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter mt-4">
                         We retain your personal data as long as we are providing our Services to you. Even after we stop providing our Services directly or indirectly to you, and even if you close your account, we keep your personal data in order to comply with our legal and regulatory obligations. We may also keep it to assist with our fraud monitoring, detection and prevention activities. We also keep your personal data to comply with our tax, accounting, and financial reporting obligations, where we are required to retain the data by our contractual commitments to our financial partners, and where data retention is mandated by the payment methods you used. In all cases where we keep data, we do so in accordance with any limitation periods and records retention obligations that are imposed by applicable law.
@@ -258,7 +258,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Your Rights and Choices</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Your Rights and Choices</h1>
                 <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter ">
                     You may have choices regarding our collection, use and disclosure of your personal data:
                 </p>
@@ -298,7 +298,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] mt-8">Process for exercising data protection rights</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] mt-8">Process for exercising data protection rights</h1>
                 <div className="space-y-4">
                     <div>
                         <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter mt-4 ">
@@ -328,7 +328,7 @@ export default function Privacy() {
             </section>
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Used by Minors</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Used by Minors</h1>
                 <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter mt-4">
                     Our Services are not directed to minors, including children under the age of 18, and we request that they not provide personal data through the Services. In some countries, we may impose higher age limits as required by applicable law.
                 </p>
@@ -336,7 +336,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Updates To This Privacy Policy and Notifications</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Updates To This Privacy Policy and Notifications</h1>
                 <div className="space-y-4">
                     <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter mt-4">
                         We may change this Privacy Policy from time to time. When we do make updates, we'll let you know by changing the "Last updated" legend at the top of this Privacy Policy. If it is a big update, we will send you a notification or post a notice on our website. If you ever have any questions about changes made to the Privacy Policy, please contact us.
@@ -350,7 +350,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Mobile Devices</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Mobile Devices</h1>
                 <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter mt-4">
                     With your consent, we may send you push notifications. You may grant us access to your location information or contact details in order to provide our Services to you. When you use our Services on a mobile device, we may collect information tagged with your location information. Please read the instructions on your mobile device manufacturer how to change the settings to enable or disable the sharing of such information or the receipt of (or opt-out of receiving) push notifications (including Software Development Kit ("SDK") and other similar data). Different device operating systems may have different settings, so please familiarize yourself with such settings governing push notifications.
                 </p>
@@ -358,7 +358,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Legal Basis for Processing (For EEA Users only)</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Legal Basis for Processing (For EEA Users only)</h1>
                 <div className="space-y-4">
                     <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                         This section only applies to European Economic Area ("EEA") users. We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:
@@ -379,7 +379,7 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">California Consumer Privacy Act (CCPA)</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">California Consumer Privacy Act (CCPA)</h1>
                 <p className=" text-[#5F5F5F] text-lg  leading-relaxed font-inter mb-4">
                     If you are located in California, we process your personal data in accordance with the California Consumer Privacy Act (CCPA). This section provides additional details about the personal data we collect and use for purposes of CCPA.
                 </p>
@@ -424,14 +424,14 @@ export default function Privacy() {
 
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Languages</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Languages</h1>
                 <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                     This Private Policy is written in English. Any translations into another language are made solely for convenience and shall not be used in the interpretation or application of this Privacy Policy. The other translations of this Privacy Policy are only for reference. In case of any discrepancy, the English version shall prevail.
                 </p>
             </section>
 
             <section>
-                <h1 className="text-5xl font-bold text-[#2697FF] my-8">Contact Us</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-[#2697FF] my-8">Contact Us</h1>
                 <div className="space-y-4">
                     <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                         To submit questions regarding this Privacy Policy, you can contact Aliens by emailing us at support@website.com.
