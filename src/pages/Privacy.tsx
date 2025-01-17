@@ -425,7 +425,7 @@ export default function Privacy() {
 
             <section>
                 <h1 className="text-5xl font-bold text-[#2697FF] my-8">Languages</h1>
-                <p className="text-gray-600">
+                <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                     This Private Policy is written in English. Any translations into another language are made solely for convenience and shall not be used in the interpretation or application of this Privacy Policy. The other translations of this Privacy Policy are only for reference. In case of any discrepancy, the English version shall prevail.
                 </p>
             </section>
@@ -433,11 +433,11 @@ export default function Privacy() {
             <section>
                 <h1 className="text-5xl font-bold text-[#2697FF] my-8">Contact Us</h1>
                 <div className="space-y-4">
-                    <p className="text-gray-600">
+                    <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                         To submit questions regarding this Privacy Policy, you can contact Aliens by emailing us at support@website.com.
                     </p>
 
-                    <p className="text-gray-600">
+                    <p className="text-[#5F5F5F] text-lg  leading-relaxed font-inter">
                         We may need to verify your identity before responding to your request, such as verifying that the email address from which you send the request matches your email address that we have on file. Authentication based on a government-issued and valid identification document may be required.
                     </p>
                 </div>
