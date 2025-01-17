@@ -88,7 +88,7 @@ export function Hero() {
 
                         {/* Play Icon Overlay */}
                         {!isPlaying && (
-                            <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="absolute inset-0 md:flex items-center justify-center hidden ">
                                 <svg
                                     className="w-16 h-16 text-white"
                                     fill="currentColor"
