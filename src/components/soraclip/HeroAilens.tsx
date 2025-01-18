@@ -5,10 +5,10 @@ export function HeroAilens() {
 
             <div className="w-full md:w-1/2 space-y-4"
             >
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-[#2697FF] sm:leading-[1.2] font-redhat text-center md:text-left">
+                <h1 className="text-5xl sm:text-4xl md:text-6xl font-semibold text-[#2697FF] sm:leading-[1.2] font-redhat text-center md:text-left">
                     SoraClip
                 </h1>
-                <h2 className="text-[#5F5F5F] text-3xl font-inter font-medium">
+                <h2 className="text-[#5F5F5F] text-3xl text-center md:text-start font-inter font-medium">
                     Ultra Lightweight Open Wearable Stereo
                 </h2>
             </div>

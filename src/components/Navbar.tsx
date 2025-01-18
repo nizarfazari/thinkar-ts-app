@@ -104,50 +104,57 @@ const Navbar = () => {
                     >
                         <Link
                             to="/"
-                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            className="block py-3 px-4 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActiveMobile('/') }}
+                            onClick={() => setOpen(false)} // Menutup navbar saat item diklik
                         >
                             Home
                         </Link>
                         <Link
                             to="/ailens"
-                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            className="block py-3 px-4 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActiveMobile('/ailens') }}
+                            onClick={() => setOpen(false)} // Menutup navbar saat item diklik
                         >
                             Ailens
                         </Link>
                         <Link
                             to="/aira"
-                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            className="block py-3 px-4 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActiveMobile('/aira') }}
+                            onClick={() => setOpen(false)} // Menutup navbar saat item diklik
                         >
                             AiRa
                         </Link>
                         <Link
                             to="/soraclip"
-                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            className="block py-3 px-4 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActiveMobile('/soraclip') }}
+                            onClick={() => setOpen(false)} // Menutup navbar saat item diklik
                         >
                             SoraClip
                         </Link>
                         <Link
                             to="/our-vision"
-                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            className="block py-3 px-4 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActiveMobile('/our-vision') }}
+                            onClick={() => setOpen(false)} // Menutup navbar saat item diklik
                         >
                             Our Vision
                         </Link>
                         <Link
                             to="/contact-us"
-                            className="block py-3 px-4  hover:bg-blue-200 hover:text-blue-900 transition duration-300"
+                            className="block py-3 px-4 hover:bg-blue-200 hover:text-blue-900 transition duration-300"
                             style={{ color: isActiveMobile('/contact-us') }}
+                            onClick={() => setOpen(false)} // Menutup navbar saat item diklik
                         >
                             Contact Us
                         </Link>
-                        <div className='px-5'>
+                        <div className="px-5">
                             <button
                                 type="button"
-                                className="w-full  px-5 py-2 mt-5 mx-4 bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold shadow-md rounded-2xl hover:from-blue-500 hover:to-blue-600 focus:outline-none transition duration-300"
+                                className="w-full px-5 py-2 mt-5 mx-4 bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold shadow-md rounded-2xl hover:from-blue-500 hover:to-blue-600 focus:outline-none transition duration-300"
+                                onClick={() => setOpen(false)} // Menutup navbar saat tombol diklik
                             >
                                 Buy Now
                             </button>
@@ -155,7 +162,6 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-
 
 
         </nav>

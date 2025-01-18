@@ -3,14 +3,17 @@ export default function Footer() {
         <footer className="bg-gradient-to-b from-[#71AED0] to-[#71AED0] pb-8 shadow-footer">
             <div className="container mx-auto border-t-[2px] border-white py-8">
                 <ul className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-                    <li>
+                    {/* Logo */}
+                    <li className="col-span-2 md:col-span-1 flex justify-center md:block">
                         <a
                             href="/about"
                             className="text-gray-200 hover:text-white transition-colors"
                         >
-                            <img src="/logo-3.png" className="w-28 " alt="" />
+                            <img src="/logo-3.png" className="w-28" alt="Logo" />
                         </a>
                     </li>
+
+                    {/* Navigation Links */}
                     <li>
                         <a
                             href="/products"
@@ -46,7 +49,5 @@ export default function Footer() {
                 </ul>
             </div>
         </footer>
-
-    )
+    );
 }
-
