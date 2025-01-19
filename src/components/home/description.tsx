@@ -57,7 +57,7 @@ export default function Description() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-[#444A4D]/80 to-[#444A4D]/90 p-6  backdrop-blur-md "
+              className="group relative overflow-hidden rounded-2xl bg-black p-6  backdrop-blur-md "
             >
               <div className="space-y-5">
                 <img src={feature.icon} className="h-14" alt="" />

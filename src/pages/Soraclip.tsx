@@ -1,5 +1,5 @@
 import { Features } from "@/components/soraclip/Feature";
-import { HeroAilens } from "@/components/soraclip/HeroAilens";
+import { HeroAilens } from "@/components/soraclip/HeroSoraclip";
 import { Specs } from "@/components/soraclip/Specs";
 import SubscriptionAilens from "@/components/soraclip/subscription";
 

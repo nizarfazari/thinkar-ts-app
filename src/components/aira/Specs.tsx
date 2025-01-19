@@ -25,7 +25,7 @@ export function Specs() {
 
   return (
     <section className="container mx-auto pb-6">
-      <div className="bg-gradient-to-b from-[#576973]/80 to-[#576973]/90 p-6  backdrop-blur-md  rounded-3xl  py-10 px-8 sm:px-0">
+      <div className="bg-black p-6  backdrop-blur-md  rounded-3xl  py-10 px-8 sm:px-0">
         <div className="grid grid-cols-2  md:flex flex-wrap items-center justify-center gap-6 md:gap-8">
           {specs.map((spec, index) => (
             <div key={index} className="flex items-center gap-6 grow">

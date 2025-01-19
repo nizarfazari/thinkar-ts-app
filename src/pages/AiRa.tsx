@@ -1,5 +1,5 @@
 import { Features } from "@/components/aira/Feature";
-import { HeroAilens } from "@/components/aira/HeroAilens";
+import { HeroAilens } from "@/components/aira/HeroAira";
 import { Specs } from "@/components/aira/Specs";
 import SubscriptionAilens from "@/components/aira/subscription";
 
